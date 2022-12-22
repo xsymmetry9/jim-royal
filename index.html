@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
+<!-- jquery-3 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <title>Jim Royal Trading Company</title>
 </head>
@@ -16,39 +20,42 @@
     <header>
         <div class="primary-header">
             <div class="nav-wrapper container">
-              <a href=aria-label="home">
-                <img src="images/logo.png" alt="logo">
+              <a class="title" href="#" aria-label="home">
+                <img src="images/logo-green.png" height="38" width="38" alt="">
+                <h4 class="lang font-primary-dark" key="TITLE">Jim Royal Trading</h4>
               </a>
-              <!-- <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+              <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
                 <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="menu" aria-hidden="true">
-                <img class="icon-close" src="images/icon-close.svg" alt="close" aria-hidden="true">
+                <!-- <img class="icon-close" src="images/icon-close.svg" alt="close" aria-hidden="true"> -->
                 <span class="visually-hidden">Menu</span>
-              </button> -->
+              </button>
     
               <nav class="primary-navigation">
                 <ul aria-label="Primary" role="list" class="nav-list">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="products.html">Product</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="gallery.html">News and Event</a></li>
-                  <li>
-                    <a href="">EN</a>
-                    </li>
+                  <li><a href="about.html" class="lang" key="ABOUT">About</a></li>
+                  <li><a href="products.html" class ="lang" key="BRAND">Brand</a></li>
+                  <li><a href="contact.html" class ="lang" key="CONTACT">Contact</a></li>
+                  <li><a href="gallery.html" class ="lang" key="NEWS">News and Event</a></li>
                 </ul>
               </nav>
+
+              <div class="mobile-translate-toggle">
+                <button class="translate" id ="en-us">EN</button>
+                <button class="translate" id="zh-tw">CH</button>
+              </div>
             </div>
           </div>
     </header>
     <main>
-        <section class="padding-block-700" id="hero-page">
+        <section class="padding-block-700 container" id="hero-page">
 
             <div class="container hero">
     
                 <div class="text-content">
                   <!-- Can you :before here -->
               
-                  <h1>Your sincere, <span class="clr-red">partner</span></h1>
-                  <p>We are service-driven import and export pharmaceutical company</p>
+                  <h1>Your sincerely, <span class="clr-red f-cap">partner</span></h1>
+                  <p class="lang" key="HERO-INFO">We are service-driven import and export pharmaceutical company</p>
                   <div class="buttons">
                     <button class="button-primary-dark">
                         Contact Us
@@ -62,19 +69,66 @@
             </div>
           </section>
           <section class="container about">
-            <h2>Company</h2>
-            <p>Jim Jim Royal Trading Company is a service-driven import and export enterprise that focuses on professionalism and service.  </p>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor tortor at nulla porttitor habitant in condimentum suspendisse. Sit feugiat mauris in mattis viverra molestie ac, id. Non eget est id amet, eget. Odio sit porttitor enim a.</p>
-          </section>
+            <h2>About Us</h2>
+            <p>The Jim Royal Trading Company was founded in April 1987 and specializes in the import and export of pharmaceutical active ingredients, fine chemicals, intermediates, veterinary raw materials, feed additives, nutritional ingredients, food additives, and nutraceutical raw materials. The company operated using both stock sales and indent business models, and had partnerships with numerous international manufacturers.</p>
+    
+
+            <ul class="d-flex">
+                <li>
+                    <div class="icon-wrapper">
+                        <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M42.6777 7.89188C37.9893 3.20347 31.6304 0.56955 25 0.56955C18.3696 0.56955 12.0107 3.20347 7.32233 7.89188C2.63392 12.5803 0 18.9391 0 25.5695C0 32.2 2.63392 38.5588 7.32233 43.2472C12.0107 47.9356 18.3696 50.5695 25 50.5695C31.6304 50.5695 37.9893 47.9356 42.6777 43.2472C47.3661 38.5588 50 32.2 50 25.5695C50 18.9391 47.3661 12.5803 42.6777 7.89188ZM25 47.2187C13.0628 47.2187 3.35082 37.5069 3.35082 25.5695C3.35082 13.6322 13.0626 3.92037 25 3.92037C36.9374 3.92037 46.6492 13.6322 46.6492 25.5695C46.6492 37.5069 36.9374 47.2187 25 47.2187Z" fill="black"/>
+                            <path d="M21.2324 30.8112L13.5452 23.1241L11.1759 25.4934L21.2324 35.55L38.7717 18.0108L36.4023 15.6415L21.2324 30.8112Z" fill="black"/>
+                        </svg>
+                        <h4>genuine</h3>    
+                    </div>
+             
+                </li>
+                <li>
+                    <div class="icon-wrapper">
+                        <svg width="50" height="60" viewBox="0 0 50 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.0119 0.00110635C28.977 -0.0472936 32.808 1.49406 35.6376 4.28636C38.4671 7.07866 40.0587 10.8892 40.0587 14.8636C40.0587 18.838 38.469 22.6485 35.6376 25.4408C32.8062 28.2332 28.977 29.7745 25.0119 29.7261C16.877 29.62 10.3337 22.9967 10.3337 14.8636C10.3337 6.73056 16.8789 0.107214 25.0119 0.00110635ZM49.1449 32.336H49.0667L37.8304 26.77C37.0449 26.3828 36.0955 26.6732 35.658 27.429C32.7689 32.2671 29.1613 36.6305 24.9635 40.3815C20.7937 36.6398 17.2065 32.2857 14.3267 27.4774C13.8911 26.7123 12.9399 26.42 12.1543 26.8091L0.897584 32.336H0.8194C0.0431394 32.7921 -0.228645 33.7805 0.208816 34.5754C3.3213 39.9459 7.11139 44.9013 11.5046 49.2927L11.4953 49.302C11.553 49.3597 11.6219 49.4193 11.6796 49.477C12.5136 50.311 13.3568 51.1245 14.2299 51.91C14.4328 52.0943 14.6376 52.2693 14.8405 52.4536C15.6261 53.1424 16.4116 53.8311 17.2251 54.4901C17.5844 54.7805 17.9623 55.0523 18.3216 55.3334C19.0103 55.8658 19.6879 56.4093 20.3972 56.9231C21.4936 57.7087 22.6087 58.4738 23.7423 59.1923C24.4981 59.6763 25.468 59.6968 26.2443 59.2407C27.4468 58.4645 28.6289 57.651 29.783 56.8077C29.958 56.6811 30.1125 56.5452 30.2875 56.4298C31.1699 55.7708 32.0522 55.0914 32.9141 54.3933C33.4968 53.9186 34.059 53.4235 34.6212 52.9301C35.0475 52.5709 35.4644 52.2135 35.8814 51.8337C36.6093 51.1654 37.3167 50.4859 38.024 49.7879C38.1692 49.6334 38.3349 49.4975 38.4894 49.3411H38.4801C42.8827 44.9293 46.6914 39.9664 49.8038 34.5754C50.2301 33.7712 49.9397 32.7716 49.1449 32.336Z" fill="black"/>
+                        </svg>
+                        <h4>professionalism</h4>
+                    </div>    
+                </li>
+                <li>
+                    <div class="icon-wrapper">
+                        <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M45.8334 36.4029C45.8334 38.2779 45.3125 40.0487 44.375 41.5487C43.4943 43.0289 42.2438 44.2547 40.7463 45.1057C39.2488 45.9568 37.5558 46.4038 35.8334 46.4029C32.1875 46.4029 29 44.4445 27.2917 41.5487C26.375 40.0487 25.8334 38.2779 25.8334 36.4029C25.8868 33.7861 26.9638 31.2944 28.8334 29.4627C30.7029 27.6309 33.216 26.6049 35.8334 26.6049C38.4507 26.6049 40.9638 27.6309 42.8334 29.4627C44.7029 31.2944 45.78 33.7861 45.8334 36.4029V36.4029Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.9375 36.4029L34.3958 38.8612L39.7292 33.9445" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M45.8333 18.6737C45.8333 22.7779 44.7708 26.4029 43.1041 29.5487C42.1708 28.5562 41.0444 27.7651 39.794 27.2241C38.5436 26.6831 37.1957 26.4036 35.8333 26.4029C30.3125 26.4029 25.8333 30.882 25.8333 36.4029C25.8333 38.9654 26.8125 41.2987 28.3958 43.0695C27.625 43.4237 26.9166 43.7154 26.2916 43.9237C25.5833 44.1737 24.4166 44.1737 23.7083 43.9237C17.6666 41.8612 4.16663 33.257 4.16663 18.6737C4.16663 12.2362 9.35413 7.02788 15.75 7.02788C19.5208 7.02788 22.8958 8.86121 25 11.6737C26.0747 10.2337 27.4703 9.06411 29.0759 8.25766C30.6816 7.45121 32.4531 7.03014 34.25 7.02788C40.6458 7.02788 45.8333 12.2362 45.8333 18.6737Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <h4>friendly</h4>
+                    </div>            
+                </li>
+                <li>
+                    <div class="icon-wrapper">
+                        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40.0834 33.9029V14.1112C40.0834 11.8195 38.2084 9.94455 35.9167 9.94455H24.4584" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M29.6666 4.73622L23.4166 9.94455L29.6666 15.1529M10.9166 17.2362V37.0279C10.9166 39.3196 12.7916 41.1946 15.0833 41.1946H26.5416M40.0833 46.4029C41.7409 46.4029 43.3306 45.7444 44.5027 44.5723C45.6748 43.4002 46.3333 41.8105 46.3333 40.1529C46.3333 38.4953 45.6748 36.9056 44.5027 35.7335C43.3306 34.5614 41.7409 33.9029 40.0833 33.9029C38.4257 33.9029 36.836 34.5614 35.6639 35.7335C34.4918 36.9056 33.8333 38.4953 33.8333 40.1529C33.8333 41.8105 34.4918 43.4002 35.6639 44.5723C36.836 45.7444 38.4257 46.4029 40.0833 46.4029Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.3333 46.4029L27.5833 41.1946L21.3333 35.9862M10.9166 17.2362C12.5742 17.2362 14.1639 16.5777 15.336 15.4056C16.5081 14.2335 17.1666 12.6438 17.1666 10.9862C17.1666 9.32862 16.5081 7.73891 15.336 6.5668C14.1639 5.3947 12.5742 4.73622 10.9166 4.73622C9.25902 4.73622 7.66931 5.3947 6.49721 6.5668C5.32511 7.73891 4.66663 9.32862 4.66663 10.9862C4.66663 12.6438 5.32511 14.2335 6.49721 15.4056C7.66931 16.5777 9.25902 17.2362 10.9166 17.2362V17.2362Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h4>dependable</h4>
+                    </div>                
+                </li>
+            </ul>
+            
+        </section>
+
           <section>
             <!-- Partner Sections -->
             <div class="d-grid-col-2">
                 <div class="left">
                     <div class="left-wrapper">
-                        <h2>Partners</h2>
-                        <p>All of our partners are from all over the world, including Germainy, Japan, Switzerland, Spain, and many more!!!</p>
-                        <button class="button-primary-dark">Our Products</button>
+                        <h2>What we do</h2>
+                        <ul>
+                          <li>Providing Market Insight</li>
+                          <li>Sourcing Products</li>
+                          <li>Complying with customs regulatory requirements</li>
+                          <li>Arranging transportation and logistic</li>
+                          <li>Reasonable contracts</li>
+                        </ul>              
                     </div>
                  
                 </div>
@@ -86,31 +140,51 @@
           </section>
           <section>
             <div class="cta">
-                <div class="container">
-                    <div class="col">
-
+                <div class="container d-grid-col-2-no-top-margin">
+                    <div class="col-1">
+                        <h3>Don't hesitate to contact us</h3>
                     </div>
-                    <div class="col">
-                        <div class="text-content">
-                            <p>tel: +886 - 2 - 2709 - 2296 </p>
-                            <p>Fax: +886-2-2325-7047</p>
-                            <p>Address: Address: 6F-2, No. 341, Sec. 4, Sinyi Road., Da-an District, Taipei City 106, Taiwan (R.O.C)</p>
-                            <p>Email: nutrition@jimroyal-trade.com</p>
-                        </div>
-                        <div class="some image">
-                            <!-- Map goes here -->
-                        </div>
-                 
-                    </div>
-                    <div class="col">
-                        <form action="">
-                            <p>name</p>
-                            <p>phone number</p>
-                            <p>company name</p>
-                            <p>subject</p>
-                            <p>email</p>
-                            <p>some text</p>
-                            <button class="button-primary-dark"></button>
+               
+                    <div class="col-2">
+      
+                        <form class="form-container" action="">
+                     
+                            <input type="text"
+                            class="form-control"
+                            id="subject"
+                            name="subject" required
+                            placeholder="Subject"
+                            max-length="100">
+                     
+                            <input type="text"
+                            class="form-control"
+                            id="name"
+                            name="name" required
+                            placeholder="Name"
+                            max-length="100">
+                          
+                            <input type="text"
+                            class="form-control"
+                            id="Cname"
+                            name="Cname" required
+                            placeholder="Company Name"
+                            max-length="100">
+                          
+                            <input type="email"
+                            class="form-control"
+                            id="email"
+                            name="email" required
+                            placeholder="Email Address"
+                            max-length="100">
+                            <textarea
+                            class="form-control"
+                            name="comment"
+                            placeholder="Leave your comments"
+                            rows="4" cols="50">Your comments</textarea>
+                            <img class="img-eclipse" src="images/ecclipse-green.png" alt="">
+                            <img class="img-tablet" src="images/tablet-rotate-right.png" alt="">
+    
+                            <button class="button-primary-dark">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -118,7 +192,40 @@
           </section> 
     </main>
     <footer>
-
+        <div class="container">
+            <div class="primary-footer-wrapper">
+              <div class="primary-footer-logo-social">
+                <a class="title" href="#" aria-label="home">
+                    <img src="images/logo-green.png" height="38" width="38" alt="">
+                    <h4 class="lang font-primary-white" key="TITLE">Jim Royal Trading</h4>
+                  </a>                <ul class = "social-list" role="list" aria-label="Social links">
+                  <!-- social media logo goes here -->
+                   <li><a href="https://www.facebook.com"><img class="social-icon" src="images/icon-facebook.svg" alt=""></a></li>
+                   <li><a href="https://www.instagram.com"><img class= "social-icon" src="images/icon-instagram.svg" alt=""></a></li>
+                   <li><a href="https://www.youtube.com"><img class="social-icon" src="images/icon-youtube.svg" alt=""></a></li>
+                   <li><a href="https://www.twitter.com"><img class="social-icon" src="images/icon-twitter.svg" alt=""></a></li>
+                </ul>
+              </div>
+              <div class="primary-footer-nav">
+                <nav class="footer-nav">
+                  <ul class="flow">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="brand.html">Brand</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">News and Event</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="primary-footer-form">
+                <form action="">
+                  <input type="email">
+                  <button class="button">Go</button>
+                </form>
+                <p>Copyright 2022. All Rights Reserve</p>
+              </div>
+            </div>
+          </div>
     </footer>
 </body>
 </html>
