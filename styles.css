@@ -15,7 +15,7 @@
     --clr-green-100: #dcfce7;
     --clr-green-50: #f0fdf4;
 
-    --clr-red-600: #dc2626;
+    --clr-red-600: #4e2d2d;
 
     --clr-accent: var(--clr-red-600);
     --ff-primary: 'Raleway', sans-serif;
@@ -393,7 +393,6 @@
   }
   #about h3{
     font-size: 24px;
-    color: var(--clr-gree-900);
     font-weight: var(--fw-semi-bold);
     color: var(--clr-green-900);
   }
@@ -476,7 +475,22 @@
     grid-template-areas: "content img";
   }
 
-  #brands{
+  .title__about{
+    background: url(images/walkingintowood.jpg);
+    background-position-y: 55%;
+    background-position-x: 51%;  
+    background-size: cover;
+}
+  .title__about h1{
+    font-size: 3em;
+    font-weight: var(--fw-bold);
+    text-align: center;
+    padding: 1.5em;
+  }
+
+  /* -------------------------------------------------*/
+
+#brands{
     margin-top: 30px;
   }
   #brands h2{
@@ -487,21 +501,50 @@
     text-align: center;
     padding: 2em 0;
   }
-  .carousel__brands{
-    margin-top: 60px;
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 7));
+  }
+  
+}
+  .slider__brands{
+    height: 200px;
+    margin: auto;
+    position: relative;
+    width: auto;
+    overflow: hidden;
+  }
+  .slider__brands .slider-track__brands{
+    padding: 30px 5px;
+    display: flex;
+    gap: 30px;
+    animation: scroll 40s linear infinite;
+    width: calc(250px * 6);
+  }
+  .slider__brands .slide{
+    height: 100px;
+    width: 250px;
+  }
+
+  /* .carousel__brands{
+    padding: 30px 0;
     }
 .stroller__brands{
   display: grid;
-  gap: 3rem;
+  gap: clamp(1rem,2vw, 3rem);
+
   grid-auto-flow: column;
   grid-auto-columns: 22%;
 
   overflow-x: auto;
   overscroll-behavior-inline: contain;
-
-  height: 200px;
-
+  height: 100%;
+  max-height: 200px
 }
+
  #brands .items{
   display: flex;
   align-items: center;
@@ -511,9 +554,9 @@
  }
  #brands .items > img{
   inline-size: 100%; 
-}
+} 
 
- 
+  */
 
 
 /* Form */
@@ -570,8 +613,6 @@
   grid-area: form;
   position: relative;
 }
-
-
 
 
 .form-container{
@@ -642,11 +683,43 @@
 .font-primary-dark{
     color:var(--clr-neutral-900);
   }
-  .font-primary-white{
+.font-primary-white{
     color: var(--clr-green-50);
   }
+.font-primary-dark-green{
+  color: var(--clr-green-900);
+}
+.f-w-bold{
+  font-weight: var(--fw-bold);
+}
 
-  .title{
+.f-w-semi-bold{
+  font-weight: var(--fw-semi-bold);
+}
+.t-a-center{
+    text-align: center;
+  }
+
+
+/* Spacing */
+.spacing-1{
+  padding: .5em 0;
+}
+.spacing-2{
+  padding: 1em 0;
+}
+.spacing-3{
+  padding: 1.5em 0;
+}
+.h-spacing-1{
+  margin: 0 .5em;
+}
+.top-spacing-1{
+  padding-top: 3em;
+}
+
+
+.title{
     font-size: 1.4rem;
     font-weight: 700;
     text-decoration: none;
@@ -687,11 +760,6 @@
 
 }
 
-.button-primary-light:active {
-  background-color: #EDEFF2;
-}
-
-
 .button-primary-dark{
   background-color: blue;
   color: #fff;
@@ -723,14 +791,13 @@
   background-color: var(--clr-green-50);
   outline: none;
 }
-.button-primary-dark:active {
-  background-color: var(--clr-green-600);
-  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-}
+
 .clr-red{
     color: var(--clr-red-600);
 }
 .f-cap{
     text-transform: uppercase;
 }
+
+/* About Page */
 

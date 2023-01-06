@@ -1,0 +1,171 @@
+.bg-dark{
+    background-color: black;
+}
+
+.container__contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: $clr-green-50;
+    .pos-relative{
+        position: relative;
+        justify-self: end;
+        margin-top: 5rem;
+        padding-right: .5em;
+        max-width: 500px;
+        width: 100%;
+    
+        h1{
+            font-size: $fs-900;
+            font-weight: $fw-bold;
+            line-height: 90px;
+
+           
+        }
+        p{
+            font-weight: $fw-regular;
+            font-weight: $fs-400;
+            margin-left: .5em;
+        }
+        form{
+            max-width: 670px;
+            width: 100%;
+            font-size: $fs-500;
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1em;
+                padding: 5em .5em;
+                // @media (max-width:900px){
+                //     max-width: 450px;
+                // }
+             
+                .col-6, .col-12{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .col-6{
+                    flex-wrap: wrap;
+                    width: 48%;
+                    @media (max-width: 400px){
+                        width: 100%;
+                    }
+                }
+                .col-12{
+                
+                    width: 98%;
+                }
+            }
+
+            .form-control{
+
+                font-family: raleway, sans-serif;
+                font-size: $fs-600;
+                padding: .5em 1em .5em 0;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid rgb(161, 161, 161);
+                color: #fff;
+
+                transition: border-bottom 2s;
+                &:focus,
+                :hover{
+                    outline: none;
+                    border-bottom: 1px solid green;
+                    transition-timing-function: ease;
+                }
+            }
+            textarea{
+                height: 80px;
+            }
+            
+        }
+        
+      
+    }
+    .map_wrap{
+        max-width: 600px;
+        border: solid 4px red;
+        .map{
+            width: 100%;
+        }
+    }
+}
+#contact__info{
+    padding: 3em 1.5em;
+    background-color:   #f6f9fc;
+}
+.contact_wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    .card-body{
+        font-family: raleway, sans-serif;
+        padding: 1.8rem;
+        background-color: #fff;
+        border-radius: 25px;
+        h4{
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        p{
+            font-size: 1rem;
+            margin-bottom: 1.2rem;
+            line-height: 1.5;
+        }
+        span{
+            color: $clr-neutral-600;
+            font-size: .8rem;
+            display: block;
+            opacity: .7;
+            margin-bottom: .3rem;
+        }
+        a{
+            text-decoration: none;
+            color: $clr-neutral-900;
+            font-size: 1.2rem;
+        }
+        li{
+            margin-bottom: .8rem;
+            .d-flex{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                span{
+                    opacity:1;
+                    font-size: 1.2rem;
+                    font-weight: $fw-semi-bold;
+                    color: $clr-neutral-900;
+                }
+                .border-top{
+                    border-top: 1px solid  rgba(82, 82, 82, 0.3);
+                    width: 34px;
+                    height: 1px;
+                }
+            }
+        }
+
+        .btn-outline{
+
+            box-sizing: border-box;
+            padding: 9.2px 20px 9.2px 20px;
+            font-size: .7rem;
+            font-weight: $fw-semi-bold;
+            color: $clr-green-600;
+            outline: 1px solid $clr-green-600;
+            line-height: 1.4;
+            border-radius: 12px;
+
+            img{
+                height: 12px;
+                width: auto;
+            }
+        }
+
+    }
+}
+.flow{
+    list-style: none;
+}

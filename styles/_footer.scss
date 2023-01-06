@@ -1,0 +1,91 @@
+
+  footer{
+    h4{
+        font-size: 1.5rem;
+        color: darkgreen;
+    }
+    background: white;
+
+    .primary-footer-wrapper{
+
+        padding: 3rem 0;
+        display: grid;
+        grid-template-areas:
+        "logo-social"
+        "nav"
+        "form";
+        gap: 30px;
+    
+        justify-items: center;
+    }
+    @media(min-width: 50em){
+        .primary-footer-wrapper{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:"logo-social nav form";
+        }
+        .primary-footer-logo-social{
+            align-items: flex-start;
+        }
+    }
+
+    .primary-footer-logo-social{
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        grid-area: logo-social;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-list{
+        display: flex;
+        gap: 20px;
+        margin-left: 7px;
+        list-style: none;
+       
+    }
+
+    .social-icon{
+        width: $size-600;
+        aspect-ratio: 1.1;
+    }
+    .primary-footer-nav{
+        grid-area: nav;
+    }
+
+    .footer-nav{
+        a{
+            color: $clr-neutral-900;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: $fw-semi-bold;
+            &:is(:hover,:focus){
+                color: red;
+            }
+        }
+        .flow{
+            list-style: none;
+            gap: 1.1em;
+            display: grid;
+        }
+
+    }
+    .primary-footer-info{
+        font-size: .9rem;
+        display: grid;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        max-width: 250px;
+        .contact-wrap{
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+  }

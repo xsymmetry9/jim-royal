@@ -1,0 +1,44 @@
+#hero-page{
+    background: url(../images/grassland-background.png) no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+
+    .text-content{
+
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        height: 65vh;
+        justify-content: center;
+
+        margin-inline: auto;
+        @media(max-width: 55em){
+            // padding-left: 20px;
+            max-width: 300px;
+        }
+      
+    
+        h1{
+            font-size: 60px;
+            font-weight: $fw-bold;
+            line-height: .9;
+            margin-bottom: .5rem;
+
+            @media(max-width: 55em){
+                font-size:$fs-800;
+            }
+        }
+   
+        .buttons{
+            margin-top: 1.5em;
+            @media (max-width: 55em){
+                justify-content: center;
+
+            }
+        }
+       
+    }
+}
+  
+
+  

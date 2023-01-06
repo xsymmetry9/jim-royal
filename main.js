@@ -59,6 +59,8 @@ $(document).ready(function() {
   $(".translate").click(function() {
     var lang = $(this).attr("id");
     console.log($(this).attr("id"));
+    $(".translate").removeClass("active");
+    $(this).addClass("active");
 
     $(".lang").each(function(index, element) {
       $(this).text(arrLang[lang][$(this).attr("key")]);

@@ -1,0 +1,156 @@
+$clr-neutral-900: #171717;
+$clr-neutral-600: #525252;
+$clr-neutral-300: #d4d4d4;
+
+$clr-green-900: #14532d;
+$clr-green-800: #166534;
+$clr-green-700: #15803d;
+$clr-green-600: #16a34a;
+$clr-green-500: #22c55e;
+$clr-green-400: #4ade80;
+$clr-green-300: #86efac;
+$clr-green-200: #bbf7d0;
+$clr-green-100: #dcfce7;
+$clr-green-50: #f0fdf4;
+
+$clr-red-600: #dc2626;
+
+$clr-accent: var(--clr-red-600);
+$ff-primary: 'Raleway', sans-serif;
+$ff-body: var(--ff-primary);
+$ff-heading: var(--ff-primary);
+
+$fw-regular: 400;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fs-300: .8125rem;
+$fs-400: .875rem;
+$fs-500: .9375rem;
+$fs-600: 1rem;
+$fs-700: 1.875rem;
+$fs-800: 2.5rem;
+$fs-900: 3.5rem;
+
+$fs-body: var(--fs-400);
+$fs-primary-heading: var(--fs-900);
+$fs-secondary-heading: var(--fs-700);
+$fs-nav: var(--fs-600);
+$fs-button: var(--fs-300);
+
+$size-100: .25rem;
+$size-200: .5rem;
+$size-300: .75rem;
+$size-400: 1rem;
+$size-500: 1.5rem;
+$size-600: 2rem;
+$size-700: 3rem;
+$size-800: 4rem;
+$size-900: 5rem;
+
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin-inline: auto;
+}
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+// Buttons
+.buttons{
+    display: flex;
+    gap: 1.8em;
+}
+.button-primary-dark,
+.button-primary-light {
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: raleway, Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.button-primary-light{
+    background-color: $clr-green-50;
+    border: none;
+    color: $clr-neutral-900;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    &:hover,
+    &:focus{
+        background-color: green;
+        color: white;
+        box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    }
+}
+
+.button-primary-dark{
+    background-color: green;
+    color: #fff;
+    border: 1px solid rgba(27, 31, 35, .15);
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    &:focus,
+    &:hover{
+        box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+        color: $clr-neutral-900;
+        background-color: $clr-green-50;
+        outline: none;
+    }
+}
+
+// Fonts
+.font-primary-dark{
+    color: $clr-neutral-900;
+  }
+.font-primary-white{
+    color:  $clr-green-50;
+  }
+.font-primary-dark-green{
+    color: $clr-green-900;
+}
+.f-w-bold{
+    font-weight: $fw-bold;
+}
+.f-w-semi-bold{
+    font-weight: $fw-semi-bold;
+}
+.clr-red{
+    color: blue}
+.f-cap{
+    text-transform: uppercase;
+}
+// Alignments
+.t-a-center{
+    text-align: center;
+}
+/* Spacing */
+.spacing-1{
+    padding: .5em 0;
+  }
+.spacing-2{
+    padding: 1em 0;
+  }
+.spacing-3{
+    padding: 1.5em 0;
+}
+.h-spacing-1{
+    margin: 0 .5em;
+}
+.top-spacing-1{
+    padding-top: 3em;
+}
