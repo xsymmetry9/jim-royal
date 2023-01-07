@@ -651,29 +651,42 @@ header .primary-header .primary-navigation .nav-list a:hover {
 }
 
 .container__contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  padding: 0 0.5em;
   color: #f0fdf4;
 }
+@media (max-width: 800px) {
+  .container__contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.7fr;
+  }
+}
 .container__contact .pos-relative {
-  position: relative;
-  justify-self: end;
   margin-top: 5rem;
-  padding-right: 0.5em;
+  justify-self: end;
   max-width: 500px;
   width: 100%;
+}
+@media (max-width: 760px) {
+  .container__contact .pos-relative {
+    justify-self: center;
+  }
 }
 .container__contact .pos-relative h1 {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 90px;
 }
+@media (max-width: 55em) {
+  .container__contact .pos-relative h1 {
+    font-size: 2.5rem;
+  }
+}
 .container__contact .pos-relative p {
   font-weight: 400;
   font-weight: 0.875rem;
-  margin-left: 0.5em;
 }
 .container__contact .pos-relative form {
   max-width: 670px;
@@ -715,18 +728,21 @@ header .primary-header .primary-navigation .nav-list a:hover {
 .container__contact .pos-relative form .form-control:focus,
 .container__contact .pos-relative form .form-control :hover {
   outline: none;
-  border-bottom: 1px solid green;
+  border-bottom: 2px solid red;
   transition-timing-function: ease;
 }
 .container__contact .pos-relative form textarea {
   height: 80px;
 }
 .container__contact .map_wrap {
-  max-width: 600px;
-  border: solid 4px red;
-}
-.container__contact .map_wrap .map {
   width: 100%;
+  max-width: 700px;
+  height: 100%;
+  overflow: hidden;
+}
+.container__contact .map_wrap .google_map {
+  width: 100%;
+  height: 100%;
 }
 
 #contact__info {
@@ -738,6 +754,16 @@ header .primary-header .primary-navigation .nav-list a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
+}
+@media (max-width: 870px) {
+  .contact_wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media (max-width: 660px) {
+  .contact_wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 .contact_wrapper .card-body {
   font-family: raleway, sans-serif;
