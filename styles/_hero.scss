@@ -4,17 +4,17 @@
     background-position-y: bottom;
 
     .text-content{
+        padding: 7rem 0;
 
         max-width: 450px;
         display: flex;
         flex-direction: column;
-        height: 65vh;
         justify-content: center;
 
         margin-inline: auto;
         @media(max-width: 55em){
             // padding-left: 20px;
-            max-width: 300px;
+            width: 100%;
         }
       
     

@@ -8,10 +8,18 @@ $layout-small: 55em;
 }
 header{
     .primary-header{
+        // position: fixed;
+        // top: 0;
+        // margin-top: 7em;
+        background-color: white;
+        width: 100%;
+        z-index: 10000;
+
         border-bottom: 1px solid $clr-neutral-300;
-        padding: $size-600 $size-500;
         .nav-wrapper{
             @include flex(space-between, center, row);
+            padding: $size-600 $size-500;
+
         }
         .container{
             max-width: 1100px;
@@ -19,6 +27,13 @@ header{
         }
         .title{
             font-size: 1.4rem;
+            h4{
+                color: $clr-neutral-900;
+                  &:is(:hover,:focus){
+                color: $clr-green-700;
+            }
+            }
+          
             @media(max-width: 55em)
             {
                 font-size: 1rem;
@@ -28,11 +43,18 @@ header{
             @include flex(center, center, row);
             gap: 5px;
         }
+
         .mobile-nav-toggle{
             display: none;
         }
-        @media (max-width:$layout-small){
-            .title{
+        .mobile-nav-toggle img[aria-hidden = "false"]{
+            display: none;
+        }
+
+        @media (max-width:$layout-small)
+        {
+            .title
+            {
                 margin-inline: auto;
             }
             .primary-header{
@@ -58,12 +80,10 @@ header{
                 z-index: 1000;
               }
               .nav-list li{
-                border-bottom: $clr-green-300 2px solid;
+                // border-bottom: $clr-green-300 2px solid;
                 padding: 20px;
               }
-              .nav-list a{
-                color: $clr-neutral-900;
-              }
+    
               .mobile-translate-toggle{
                 position: absolute;
                 right: 0;
@@ -81,51 +101,16 @@ header{
             
               .primary-navigation[data-visible]{
                 display: block;
+               
               }
         }
-        button{
-            .mobile-nav-toggle{
-                display: none;
-
-            }
-            .visually-hidden{
-             @include hidden;
-            }
-        }
+    
     
         .primary-navigation{
             .nav-list{
                 display: flex;
                 gap: clamp($size-400, 5vw, $size-700);
                 list-style: none;
-
-                .dropdown{
-                    position: relative;
-                    display: inline-block;
-                    .dropdown-menu{
-                        display: none;
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
-                        right: 0;
-                        min-width: 150px;
-                        z-index: 1;
-                        background: #fff;
-                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
-                        padding: 12px 16px;
-                        li{
-                            a{
-                                display: block;
-                                text-decoration: none;
-                                color: $clr-neutral-900;
-                                &:hover{
-                                    background: red;
-                                }
-                            }
-                        }
-                     
-                    }
-                }
 
                 ul{
                     font-size: .9rem;
@@ -136,8 +121,9 @@ header{
                     color: $clr-neutral-900;
                     font-weight: 600;
                     text-decoration: none;
-                    &:hover{
-                        color: $clr-accent;
+                    &:is(:hover, :focus){
+                        color: $clr-green-700;
+                        font-weight: $fw-bold;
                         text-decoration: none;
                     }
                 }
@@ -146,4 +132,43 @@ header{
         }
     }
 
+}
+.primary-dropdown-menu[data-visible]{
+    display: block;
+}
+.primary-dropdown-menu{
+    display: none;
+    border-top: 1px solid lightgray;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+
+    .nav-list{
+        margin-top: 2rem;
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+
+        .items{
+            list-style: none;
+            padding-bottom: 2.5rem;
+           
+            a{
+                font-size: 2rem;
+                color: $clr-neutral-900;
+                text-decoration: none;
+                line-height: 1.5;
+                &:is(:hover,:focus){
+                    color: $clr-green-700;
+                    border-bottom: $clr-green-700 3px solid;
+                    padding-bottom: 2.5rem;
+                }
+
+            }
+        }
+    }
+  
+    
+     
 }

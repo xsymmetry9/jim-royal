@@ -3,25 +3,42 @@
 const primaryHeader = document.querySelector(".primary-header");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 const primaryNav = document.querySelector(".primary-navigation");
+const primaryDropdown = document.querySelector(".primary-dropdown-menu");
 const btn = document.querySelector('.dropdown-btn');
-const menu = document.querySelector('.dropdown-menu');
+const menu = document.querySelector('.primary-dropdown-menu');
 
 navToggle.addEventListener('click',() =>{
+  
+  for(const child of navToggle.children){
+    if(child.getAttribute("aria-hidden") === "true"){
+      child.setAttribute("aria-hidden", "false");
+    }
+    else if(child.getAttribute("aria-hidden") ==="false"){
+      child.setAttribute("aria-hidden", "true");
+    } 
+  }
   primaryNav.hasAttribute('data-visible') ? navToggle.setAttribute('aria-expanded', false) :
   navToggle.setAttribute('aria-expanded', true);
   primaryNav.toggleAttribute("data-visible");
   primaryHeader.toggleAttribute("data-overlay");
 });
 
+
+
 btn.addEventListener('click', function(){
-  menu.classList.toggle('show');
+  // if(menu.hasAttribute('data-visible'))
+  // {
+  //   btn.setAttribute('aria-expanded', false);
+  // };
+  
+  menu.hasAttribute('data-visible') ? btn.setAttribute('aria-expanded', false):
+  btn.setAttribute('aria-expanded', true);
+  primaryDropdown.toggleAttribute("data-visible");
+  
+
 });
 
-document.addEventListener('click',function(event){
-  if (!event.target.matches('.dropdown-btn')){
-    menu.classList.remove('show');
-  }
-})
+
 
 // Translation
 

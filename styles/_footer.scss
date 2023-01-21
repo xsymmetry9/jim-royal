@@ -65,7 +65,8 @@
             font-size: 1rem;
             font-weight: $fw-semi-bold;
             &:is(:hover,:focus){
-                color: red;
+                color: $clr-green-700;
+                font-weight: $fw-bold;
             }
         }
         .flow{
