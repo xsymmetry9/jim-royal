@@ -77,9 +77,15 @@
   .brand_cards{
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: auto;
     gap: 1.5rem;
+    @media (max-width: 55em) {
+      padding: 0 10px;
+      
+    }
   }
+
   .brand_card{
     outline: 3px solid $clr-green-700;
     border-radius: 25px;
@@ -87,24 +93,25 @@
     gap: 1.5rem;
   }
   .img_wrapper{
-    margin-inline: auto;
-    padding-top: 1.5rem;
+    justify-self: center;
+    display: flex;
+    padding: 10px 12px;
+    width: 274px;
+    height: 220px;
   }
   .img_wrapper img{
-    width: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
-  .text_wrapper{
-    font-style: $ff-primary;
-    font-size: $fs-400;
-    padding: 2rem 3rem;
-    line-height: 2;
-    background-color: $clr-green-300;
-    border-radius: 20px;
-    ul{
-      list-style: none;
-    }
-    button{
-      margin-top: 1.5em;
-    }
+  .btn_wrapper{
+    background-color: $clr-green-250;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0px;
+
+  
 
   }
