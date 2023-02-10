@@ -3,10 +3,10 @@
 const primaryHeader = document.querySelector(".primary-header");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 const primaryNav = document.querySelector(".primary-navigation");
-const primaryDropdown = document.querySelector(".primary-dropdown-menu");
-const btn = document.querySelector('.dropdown-btn');
-const menu = document.querySelector('.primary-dropdown-menu');
+const primaryDropdown = document.querySelector(".dropdown-menu");
+const btn = document.querySelectorAll('.dropdown-btn');
 
+//Main Menu Toggle with a close button
 navToggle.addEventListener('click',() =>{
   
   for(const child of navToggle.children){
@@ -24,29 +24,39 @@ navToggle.addEventListener('click',() =>{
 });
 
 
-
-btn.addEventListener('click', function(){
-  // if(menu.hasAttribute('data-visible'))
-  // {
-  //   btn.setAttribute('aria-expanded', false);
-  // };
-  
-  menu.hasAttribute('data-visible') ? btn.setAttribute('aria-expanded', false):
-  btn.setAttribute('aria-expanded', true);
-  primaryDropdown.toggleAttribute("data-visible");
-  
-
+//Dropdown Button
+// Bug: Can't close the dropdown button if clicked outside
+btn.forEach(button => {
+  button.addEventListener('click', function(e){
+    var getButton = document.getElementById(e.target.id);
+    getbtn = getButton.nextElementSibling;
+    //When it's clicked, checks if the attribute is true, and if its false,
+    //change the attribue to true, else, change it to false.
+    if (getButton.getAttribute('aria-hidden') ==="false")
+    {
+      getButton.setAttribute("aria-hidden", true);
+    }
+    else{
+      getButton.setAttribute("aria-hidden", false);
+    }
+    //Every time you click the button, it will toggle the attribute 'data-visible'
+    getbtn.toggleAttribute('data-visible');
+    
+    // getbtn.hasAttribute('data-visible') ? getButton.setAttribute('aria-expanded', false):
+    // getButton.setAttribute('aria-expanded', true);
+  });
 });
 
 
 
-// Translation
 
+
+//Building a dictionary
 var arrLang ={
     "en-us": {
         "TITLE": "Jim Royal Trading",
         "ABOUT": "About",
-        "BRAND": "Brand",
+        "BRAND": "Products",
         "CONTACT": "Contact",
         "NEWS": "News and Event",
         "HERO-INFO": "We are service-driven import and export pharmaceutical company"
