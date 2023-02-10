@@ -1,5 +1,6 @@
+
 #brands{
-    margin-top: 6em;
+   margin-top: 6em;
     h2{
         font-size: 36px;
         font-weight: $fw-bold;
@@ -111,7 +112,89 @@
     display: flex;
     justify-content: center;
     padding: 16px 0px;
-
-  
-
   }
+
+  .show{
+    display: block;
+  }
+  .information{
+    .company-name{
+      .img-wrapper{
+        display: flex;
+        justify-content: center;
+        padding: 2.5em 0;
+        img{
+          width: 250px;
+          height: auto;
+        }
+      }
+      p{
+        padding: 2.5rem .5rem 2.5rem .5rem;
+        font-size: 1.3rem;
+        line-height: 1.5;
+      }
+      .button-wrap{
+        border: 3px blue solid;
+      }
+    }
+
+    .even-columns{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .5rem;
+      @media(max-width: 55em){
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .no-list-style{
+  list-style: none;
+  }
+  .grid-jc-center{
+    display: grid;
+    justify-content: center;
+  }
+
+.text-align-center{
+  text-align: center;
+}
+.padding-y-3{
+  padding: 1.5rem 0;
+}
+.cards{
+  margin-inline: auto;
+}
+
+// .grid-center{
+//   display: grid;
+//   max-width: 900px;
+//   align-content: center;
+// }
+.brand-cards{
+  background: $clr-green-100;
+  width: 100%;
+  border-radius: 20px;
+  padding: .5rem;
+}
+.product-lists{
+  padding: 0 3rem;
+
+}
+.product-list{
+  padding: 1rem 3rem 3rem 0;
+  li{
+    position: relative;
+    line-height: 1.7;
+    font-size: $fs-500;
+    &::before{
+      content: " ";
+      position: absolute;
+      background: url(/images/check-mark.png) no-repeat;
+      height: 100%;
+      width: 23px;
+      left: -1.8rem;
+     
+    }
+  }
+}
+
