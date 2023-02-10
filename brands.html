@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Jim Royal Trading Company</title>
+
+
+
+
+</head>
+<body>
+  <header>
+    <div class="primary-header position-absolute">
+        <div class="nav-wrapper container">
+          <a class="title-logo" href="index.html" aria-label="home">
+            <img src="images/logo-green.png" height="38" width="38" alt="">
+            <h4 class="lang | font-primary-dark" key="TITLE">Jim Royal Trading</h4>
+          </a>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="menu" aria-hidden="true">
+            <img class="icon-close" src="images/close.png" alt="close" aria-hidden="false">
+            <span class="visually-hidden">Menu</span>
+          </button>
+
+          <nav class="primary-navigation">
+            <ul aria-label="Primary" role="list" class="nav-list">
+              <li><a href="about.html" class="lang" key="ABOUT">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="lang dropdown-btn" id= "product-dropdown"aria-controls="dropdown-menu" aria-expanded="false" key="BRAND">Products</a>
+                <nav class="dropdown-menu down">
+                  <ul aria-label="dropdown" role ="list" class="nav-list">
+                    <li><a href="brands.html">Branded Ingredients</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-btn" id="ingredients-dropdown" aria-controls="dropdown-menu" aria-expanded="false">All Ingredients</a>
+                      <nav class="dropdown-menu right">
+                        <ul aria-label="dropdown" role="list" class="nav-list">
+                          <li><a href="food-ingredient.html">Food Ingredient</a></li>
+                          <li><a href="health-ingredient.html">Health Ingredient</a></li>
+                        </ul>
+                      </nav>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li><a href="contact.html" class ="lang" key="CONTACT">Contact</a></li>
+              <li><a href="news.html" class ="lang" key="NEWS">News and Event</a></li>
+            </ul>
+          </nav>
+
+          <div class="mobile-translate-toggle translate-nav-wrap">
+            <a class="translate english-translate active" id ="en-us">EN</a>
+            <a class="translate chinese-translate" id="zh-tw">CH</a>
+          </div>
+        </div>
+
+
+           
+      </div>
+</header>
+    <main>
+
+      <section class="position-relative">
+        <div class="bg-black header-spacing">
+          <h3 class="container">Our Branded Ingredients</h3>
+        </div>
+
+        <div class="container">
+          <div class="brand_cards">
+            <div class="brand_card">
+              <div class="img_wrapper">
+                <img src="images/brands/DSM_Logo.png" alt="DSM logo">
+              </div>
+              <div class="btn_wrapper">
+                <a href="#dsm"class="button-primary-light">Learn more</a>
+              </div>
+            </div>
+            <div class="brand_card">
+              <div class="img_wrapper">
+                <img src="images/brands/bizen logo.jpg" alt="Bizen logo">
+              </div>
+              <div class="btn_wrapper">
+                <button class="button-primary-light">Learn more</button>
+              </div>
+            </div>
+            <div class="brand_card">
+              <div class="img_wrapper">
+                <img src="images/brands/innobio-logo.jpg" alt="Innobio Logo">
+              </div>
+              <div class="btn_wrapper">
+                <button class="button-primary-light">Learn more</button>
+              </div>
+            </div>
+        
+          
+            <div class="brand_card">
+              <div class="img_wrapper">
+                <img src="images/brands/Algry_logo.png" alt="Algry logo">
+              </div>
+              <div class="btn_wrapper">
+                <button class="button-primary-light">Learn more</button>
+              </div>
+            </div>
+            <div class="brand_card">
+              <div class="img_wrapper">
+                <img src="images/brands/D3Vlogo.jpg" alt="D3Vlogo">
+              </div>
+              <div class="btn_wrapper">
+        
+                <button class="button-primary-light">Learn more</button>
+              </div>
+            </div>
+           
+    
+            <div class="brand_card">
+              <div class="img_wrapper">
+                <img src="images/brands/kuki-logo.png" alt="Kuki logo">
+              </div>
+              <div class="btn_wrapper">
+                <button class="button-primary-light">Learn more</button>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+
+        <div class="information">
+          <ul class= "container grid-center">
+            <li class= "brand-cards show" id="dsm">
+              <div class="even-columns">
+                <div class="company-name">
+                  <div class="img-wrapper">
+                    <img src="images/brands/DSM_Logo.png" alt="DSM logo">
+                  </div>
+                  <p>擁有百年歷史荷蘭帝斯曼集團是一家以目標為導向、以科學為基礎的全球性公司，專注於營養、健康和可持續生活。
+                    我們的目標是為所有人創造更美好的生活。我們通過利用我們掌握的所有科學和創新力量來應對世界上一些最大的挑戰——為客戶、股東、
+                    我們的員工和整個社會創造價值——來實現這一目標。</p>
+                  <a href="">Download the PDF</a>
+                </div>
+                <div>
+                  <ul class="product-lists no-list-style">
+                    <li class="cards" id="food">
+                      <h2 class="text-align-center padding-y-3">Food</h2>
+                      <ul class="product-list no-list-style">
+                        <li>Floraglo®專利游離性葉黃素</li>
+                        <li>Floraglo® Lutein 10% SG VG</li>
+                        <li>Floraglo® Lutein 20% SAF</li>
+                        <li>OPTISHARP®天然玉米黃素油</li>
+                        <li>OPTISHARP® Natural (Zeaxanthin) 14% Safflower Oil</li>
+                      </ul>
+                    </li>
+                    <li class="cards" id="vitamins">
+                      <h2 class="text-align-center padding-y-3">Vitamins</h2>
+                      <ul class="product-list no-list-style">
+                        <li>Quali-A</li>
+                        <li>Quali-B</li>
+                        <li>Quali-C</li>
+                        <li>Quali-D</li>
+                        <li>Quali-E</li>
+                        <li>Quali-K</li>
+                        <li>Redivivo®茄紅素油</li>
+                        <li>redivivo® (Lycopene) 10% FS</li>
+                        <li>輔酶Q10</li>
+                        <li>ALL-Q® (Coenzyme Q10) 10% CWS/S</li>
+                        <li>乳糖酶</li>
+                        <li>Tolerase®L</li>
+                    </li>
+                </ul>
+                 
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        
+      </section>
+   
+      
+    </main>
+    <footer>
+        <div class="top-footer">
+            <div class="primary-footer-wrapper container">
+              <div class="primary-footer-logo-social">
+                <a class="title" href="#" aria-label="home">
+                    <img src="images/logo-green.png" height="38" width="38" alt="">
+                    <h4 class="lang font-primary-dark" key="TITLE">Jim Royal Trading</h4>
+                  </a>                
+                  <ul class = "social-list" role="list" aria-label="Social links">
+                   <li><a href="https://www.facebook.com"><img class="social-icon" src="images/socialMedia/icon-facebook.svg" alt="facebook"></a></li>
+                   <li><a href="https://www.instagram.com"><img class="social-icon" src="images/socialMedia/icon-instagram.svg" alt="instagram"></a></li>
+                   <li><a href="https://www.youtube.com"><img class="social-icon" src="images/socialMedia/icon-youtube.svg" alt="youtube"></a></li>
+                   <li><a href="https://www.twitter.com"><img class="social-icon" src="images/socialMedia/icon-twitter.svg" alt="twitter"></a></li>
+                </ul>
+              </div>
+              <div class="primary-footer-nav">
+                <nav class="footer-nav">
+                  <ul class="flow">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="brand.html">Brand</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">News and Event</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="primary-footer-info">
+                <div class="contact-wrap">
+                  <img src="./images/contactimg/phone.svg" alt="phone">
+                  <p>tel: +886 - 2 - 2709 - 2296</p>
+                </div>
+                <div class="contact-wrap">
+                  <img src ="./images/contactimg/fax.svg" alt="fax">
+                  <p>Fax: +886-2-2325-7047</p>
+                </div>
+                <div class="contact-wrap">
+                  <img src="./images/contactimg/address.svg" alt="address">
+                  <p>Address: 6F.-2, No. 341, Sec 4, Sinyi Rd., Dan-an District, Taipei City 106, Taiwan (R.O.C)</p>
+                </div>
+                <div class="contact-wrap">
+                  <img src="./images/contactimg/email.svg" alt="email">
+                  <p>Email: nutrition@jimroyal-trade.com</p>
+                </div>
+                
+               
+              </div>
+            </div>
+            <div class=bottom_footer>Copyright xsymmetry @ 2023</div>
+          </div>
+
+    </footer> 
+
+</body>
+</html>
