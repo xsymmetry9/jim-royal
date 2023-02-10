@@ -14,51 +14,51 @@
   <title>Jim Royal Trading Company</title>
 </head>
 <body>
-    <header>
-      <header>
-        <div class="primary-header">
-            <div class="nav-wrapper container">
-              <a class="title" href="index.html" aria-label="home">
-                <img src="images/logo-green.png" height="38" width="38" alt="">
-                <h4 class="lang | font-primary-dark" key="TITLE">Jim Royal Trading</h4>
-              </a>
-              <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="menu" aria-hidden="true">
-                <!-- <img class="icon-close" src="images/icon-close.svg" alt="close" aria-hidden="true"> -->
-                <span class="visually-hidden">Menu</span>
-              </button>
-    
-              <nav class="primary-navigation">
-                <ul aria-label="Primary" role="list" class="nav-list">
-                  <li><a href="about.html" class="lang" key="ABOUT">About</a></li>
-                  <li class="dropdown" >
-                    <a href="#" class="lang dropdown-btn" aria-controls="primary-dropdown-menu" aria-expanded="false" key="BRAND">Brand</a>
-                         
-                  <li><a href="contact.html" class ="lang" key="CONTACT">Contact</a></li>
-                  <li><a href="news.html" class ="lang" key="NEWS">News and Event</a></li>
-                </ul>
-              </nav>
-              
+  <header>
+    <div class="primary-header position-absolute">
+        <div class="nav-wrapper container">
+          <a class="title-logo" href="index.html" aria-label="home">
+            <img src="images/logo-green.png" height="38" width="38" alt="">
+            <h4 class="lang | font-primary-dark" key="TITLE">Jim Royal Trading</h4>
+          </a>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="menu" aria-hidden="true">
+            <img class="icon-close" src="images/icon-close.svg" alt="close" aria-hidden="false">
+            <span class="visually-hidden">Menu</span>
+          </button>
 
-              <div class="mobile-translate-toggle translate-nav-wrap">
-                <a class="translate english-translate active" id ="en-us">EN</a>
-                <a class="translate chinese-translate" id="zh-tw">CH</a>
-              </div>
-            </div>
+          <nav class="primary-navigation">
+            <ul aria-label="Primary" role="list" class="nav-list">
+              <li><a href="about.html" class="lang" key="ABOUT">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="lang dropdown-btn" id= "product-dropdown"aria-controls="dropdown-menu" aria-expanded="false" key="BRAND">Products</a>
+                <nav class="dropdown-menu">
+                  <ul aria-label="dropdown" role ="list" class="nav-list">
+                    <li><a href="">Branded Ingredients</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-btn" id="ingredients-dropdown" aria-controls="dropdown-menu" aria-expanded="false">All Ingredients</a>
+                      <nav class="dropdown-menu">
+                        <ul aria-label="dropdown" role="list" class="nav-list">
+                          <li><a href="#">Food Ingredient</a></li>
+                          <li><a href="#">Health Ingredient</a></li>
+                        </ul>
+                      </nav>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+              <li><a href="contact.html" class ="lang" key="CONTACT">Contact</a></li>
+              <li><a href="#" class ="lang" key="NEWS">News and Event</a></li>
+            </ul>
+          </nav>
 
-            <nav class="primary-dropdown-menu">
-              <ul aria-label="Primary-dropdown" role="list" class="nav-list">
-                <li class="items">
-                  <a href="products.html">Our Products</a>
-                </li>
-                <li class="items">
-                  <a href="brand.html">Our Brands</a>
-                </li>
-              </ul>
-            </nav>            
+          <div class="mobile-translate-toggle translate-nav-wrap">
+            <a class="translate english-translate active" id ="en-us">EN</a>
+            <a class="translate chinese-translate" id="zh-tw">CH</a>
           </div>
-    </header>
-    </header>
+        </div>
+      </div>
+</header>
     <main>
         <section class= "spacing-x-1" id="intro">
           <div class="container">
