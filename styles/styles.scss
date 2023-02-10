@@ -18,34 +18,6 @@ body{
   @import './contact-page';
   @import './footer';
 
-.translate-nav-wrap{
-  display: flex;
-  a{
-    padding: .2em .3em;
-  }
-  @media (max-width: 55em){
-    flex-direction: column;
-    // :first-child{
-    //   border-bottom: 3px solid orange;
-    // }
-  }
-}
-.english-translate,
-.chinese-translate{
-  cursor: pointer;
-  font-size: .75em;
-  font-weight: $fw-semi-bold;
-
-  &:hover,
-  &:focus{
-    color: red;
-
-  }
- 
-}
-.active{
-  border-bottom: 2px double red;
-}
 
 .wrapper{
   display: grid;

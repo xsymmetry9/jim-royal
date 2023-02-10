@@ -1,20 +1,28 @@
 #hero-page{
-    background: url(../images/grassland-background.png) no-repeat;
+    background: url(../images/family-background.png) no-repeat;
     background-size: cover;
-    background-position-y: bottom;
+    background-position: center;
+    height: 90vh;
+
+    .hero{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
 
     .text-content{
-        padding: 7rem 0;
-
+        padding: 5rem 3rem;
+        margin-left: .5rem;
+        background-color:rgba(250,250,250,.7);
+    
         max-width: 450px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    
 
-        margin-inline: auto;
+        
         @media(max-width: 55em){
             // padding-left: 20px;
             width: 100%;
+            padding: 3rem 1.5rem;
         }
       
     
