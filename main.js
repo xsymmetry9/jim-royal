@@ -32,12 +32,12 @@ btn.forEach(button => {
     getbtn = getButton.nextElementSibling;
     //When it's clicked, checks if the attribute is true, and if its false,
     //change the attribue to true, else, change it to false.
-    if (getButton.getAttribute('aria-hidden') ==="false")
+    if (getButton.getAttribute('aria-expanded') ==="false")
     {
-      getButton.setAttribute("aria-hidden", true);
+      getButton.setAttribute("aria-expanded", true);
     }
     else{
-      getButton.setAttribute("aria-hidden", false);
+      getButton.setAttribute("aria-expanded", false);
     }
     //Every time you click the button, it will toggle the attribute 'data-visible'
     getbtn.toggleAttribute('data-visible');
@@ -46,6 +46,42 @@ btn.forEach(button => {
     // getButton.setAttribute('aria-expanded', true);
   });
 });
+
+//This methods creates the user to select an item from the menu
+//It hides the menu and then displays the item
+//Gets all the buttons from the Product Menu
+const productbtns = document.querySelectorAll(".product-btn-control");
+productbtns.forEach(productbtn =>{
+  productbtn.addEventListener('click', (e) =>
+  {
+    var getButtonId = document.getElementById(e.target.id);
+    //check if aria-expanded is true or not
+    if (getButtonId.getAttribute('aria-hidden') ==="false")
+    {
+      getButtonId.setAttribute("aria-hidden", true);
+    }
+    else{
+      getButtonId.setAttribute("aria-hidden", false);
+    }
+  
+    //hide Menu
+    var getClassMenu = document.getElementById("brand_menu");
+    getClassMenu.classList.toggle('hidden');
+  
+    //Get all the product list
+    var getAllProducts = document.querySelectorAll(".brand-cards")
+    
+    //Check which one is selected and toggle it.
+    getAllProducts.forEach(card =>
+      {
+        if (card.id == getButtonId.getAttribute('id'))
+        {
+          card.classList.toggle('hidden');
+        }
+      })
+  
+  });
+})
 
 
 
@@ -70,9 +106,6 @@ var arrLang ={
         "HERO-INFO": "我們是服務型進出口醫藥公司"
     }
 };
-
-
-
 
 $(document).ready(function() {
     // The default language is English
