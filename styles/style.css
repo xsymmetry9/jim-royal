@@ -732,7 +732,7 @@ header .primary-header .primary-navigation .nav-list a:is(:hover, :focus) {
 }
 @media (max-width: 55em) {
   .brand_cards {
-    padding: 0 10px;
+    padding: 0 0.8rem;
   }
 }
 
@@ -770,6 +770,9 @@ header .primary-header .primary-navigation .nav-list a:is(:hover, :focus) {
   display: block;
 }
 
+.information {
+  padding: 0 0.8rem;
+}
 .information .company-name .img-wrapper {
   display: flex;
   justify-content: center;
@@ -779,10 +782,18 @@ header .primary-header .primary-navigation .nav-list a:is(:hover, :focus) {
   width: 250px;
   height: auto;
 }
+.information .company-name p, .information .company-name a {
+  padding: 0 2rem 0 2rem;
+  font-size: 1rem;
+}
 .information .company-name p {
-  padding: 2.5rem 0.5rem 2.5rem 0.5rem;
-  font-size: 1.3rem;
-  line-height: 1.5;
+  line-height: 2;
+}
+.information .company-name a {
+  line-height: 3;
+}
+.information .company-name .pdf-link {
+  padding: 0 2rem 0 2rem;
 }
 .information .company-name .button-wrap {
   border: 3px blue solid;
@@ -791,6 +802,7 @@ header .primary-header .primary-navigation .nav-list a:is(:hover, :focus) {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
+  padding-bottom: 2rem;
 }
 @media (max-width: 55em) {
   .information .even-columns {
@@ -820,10 +832,8 @@ header .primary-header .primary-navigation .nav-list a:is(:hover, :focus) {
 }
 
 .brand-cards {
-  background: #dcfce7;
+  outline: 3px solid #14532d;
   width: 100%;
-  border-radius: 20px;
-  padding: 0.5rem;
 }
 
 .product-lists {
@@ -845,6 +855,28 @@ header .primary-header .primary-navigation .nav-list a:is(:hover, :focus) {
   height: 100%;
   width: 23px;
   left: -1.8rem;
+}
+
+.grid-center {
+  margin-top: 30px;
+  display: grid;
+  gap: 30px;
+}
+
+.goback-btn {
+  float: right;
+}
+.goback-btn a {
+  text-decoration: none;
+  color: #16a34a;
+  font-weight: 600;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: 2px solid green;
+  background-color: lightgreen;
+}
+.goback-btn a:is(:hover, :focus) {
+  color: #171717;
+  background-color: #fafafa;
 }
 
 #cta {

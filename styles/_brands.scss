@@ -82,7 +82,7 @@
     grid-template-rows: auto;
     gap: 1.5rem;
     @media (max-width: 55em) {
-      padding: 0 10px;
+      padding: 0 .8rem;
       
     }
   }
@@ -118,6 +118,9 @@
     display: block;
   }
   .information{
+    $spacing: 0 2rem 0 2rem;
+    padding: 0 .8rem;
+
     .company-name{
       .img-wrapper{
         display: flex;
@@ -128,10 +131,20 @@
           height: auto;
         }
       }
+      p,a{
+        padding: $spacing;
+        font-size: 1rem;
+      }
       p{
-        padding: 2.5rem .5rem 2.5rem .5rem;
-        font-size: 1.3rem;
-        line-height: 1.5;
+        line-height: 2;
+      }
+      a{
+        line-height: 3;
+      }
+ 
+      .pdf-link{
+        padding: $spacing;
+
       }
       .button-wrap{
         border: 3px blue solid;
@@ -142,6 +155,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: .5rem;
+      padding-bottom: 2rem;
       @media(max-width: 55em){
         grid-template-columns: 1fr;
       }
@@ -171,10 +185,8 @@
 //   align-content: center;
 // }
 .brand-cards{
-  background: $clr-green-100;
+  outline: 3px solid $clr-green-900;
   width: 100%;
-  border-radius: 20px;
-  padding: .5rem;
 }
 .product-lists{
   padding: 0 3rem;
@@ -198,3 +210,24 @@
   }
 }
 
+.grid-center{
+  margin-top: 30px;
+  display: grid;
+  gap: 30px;
+}
+.goback-btn{
+  float: right;
+  a{
+    text-decoration: none;
+    color: $clr-green-600;
+    font-weight: $fw-semi-bold;
+    padding: .5rem 1rem .5rem 1rem;
+    border: 2px solid green;
+    background-color: lightgreen;
+    &:is(:hover,:focus){
+      color: $clr-neutral-900;
+      background-color: $clr-neutral-50;
+    }
+
+  }
+}
