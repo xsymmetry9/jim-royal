@@ -215,9 +215,9 @@
   display: grid;
   gap: 30px;
 }
-.goback-btn{
+.btn-wrapper{
   float: right;
-  a{
+  .goback-btn{
     text-decoration: none;
     color: $clr-green-600;
     font-weight: $fw-semi-bold;

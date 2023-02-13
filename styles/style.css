@@ -863,10 +863,10 @@ header .primary-header .primary-navigation .nav-list a:is(:hover, :focus) {
   gap: 30px;
 }
 
-.goback-btn {
+.btn-wrapper {
   float: right;
 }
-.goback-btn a {
+.btn-wrapper .goback-btn {
   text-decoration: none;
   color: #16a34a;
   font-weight: 600;
@@ -874,7 +874,7 @@ header .primary-header .primary-navigation .nav-list a:is(:hover, :focus) {
   border: 2px solid green;
   background-color: lightgreen;
 }
-.goback-btn a:is(:hover, :focus) {
+.btn-wrapper .goback-btn:is(:hover, :focus) {
   color: #171717;
   background-color: #fafafa;
 }
