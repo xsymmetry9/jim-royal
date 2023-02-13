@@ -48,8 +48,9 @@ btn.forEach(button => {
 });
 
 //This methods creates the user to select an item from the menu
-//It hides the menu and then displays the item
+//It hides the menu and then displays the item without changing the site
 //Gets all the buttons from the Product Menu
+const getAllProducts = document.querySelectorAll(".brand-cards")
 const productbtns = document.querySelectorAll(".product-btn-control");
 productbtns.forEach(productbtn =>{
   productbtn.addEventListener('click', (e) =>
@@ -69,7 +70,6 @@ productbtns.forEach(productbtn =>{
     getClassMenu.classList.toggle('hidden');
   
     //Get all the product list
-    var getAllProducts = document.querySelectorAll(".brand-cards")
     
     //Check which one is selected and toggle it.
     getAllProducts.forEach(card =>
@@ -81,8 +81,26 @@ productbtns.forEach(productbtn =>{
       })
   
   });
-})
+});
 
+//Get all the menu button
+const showMenu = document.querySelector(".brand_cards");
+const gobackBtns = document.querySelectorAll(".goback-btn");
+gobackBtns.forEach(gobackBtn => {
+  gobackBtn.addEventListener("click", (e)=>{
+    showMenu.classList.remove("hidden");
+    getAllProducts.forEach(card =>
+      {
+        if (card.id == e.target.id)
+        {
+          card.classList.toggle('hidden');
+        }
+        else{
+          console.log("There's a bug here");
+        }
+      });
+  });
+});
 
 
 
