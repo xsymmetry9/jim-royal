@@ -879,6 +879,10 @@ header .primary-header .primary-navigation .nav-list a:is(:hover, :focus) {
   background-color: #fafafa;
 }
 
+.hidden {
+  display: none;
+}
+
 #cta {
   background-color: #171717;
 }
