@@ -1271,6 +1271,46 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   left: 0;
 }
 
+#cta_about .bg-img {
+  background-image: url(../images/food-salad.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+#cta_about .bg-img .content {
+  justify-self: end;
+  max-width: 550px;
+  width: 100%;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 55em) {
+  #cta_about .bg-img .content {
+    justify-self: center;
+  }
+}
+#cta_about .bg-img .content h3 {
+  font-size: max(2.5rem, 32px);
+  padding-top: 2rem;
+}
+@media (max-width: 55em) {
+  #cta_about .bg-img .content h3 {
+    fontsize: 0.9375rem;
+  }
+}
+#cta_about .bg-img .content p {
+  padding-bottom: 2rem;
+}
+#cta_about .bg-img .content button {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 .bg-dark {
   background-color: black;
 }

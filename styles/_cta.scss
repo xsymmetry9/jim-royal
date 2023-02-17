@@ -98,3 +98,50 @@
       
     //   }
 }
+#cta_about{
+    .bg-img{
+        background-image: url(../images/food-salad.jpg);
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+     
+        .content{
+            justify-self: end;
+            max-width: 550px;
+            width: 100%;
+            $spacing: 2rem;
+            padding-bottom: $spacing;
+
+            @media(max-width:55em){
+                justify-self: center;
+            }
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+
+            h3{
+                font-size: max($fs-800, 32px);
+                padding-top: $spacing;
+                @media(max-width: 55em){
+                    fontsize: $fs-500;
+                }
+            }
+            p{
+                padding-bottom: $spacing;
+            }
+            button{
+                font-size: $fs-600;
+                text-transform: uppercase;
+             
+                
+            }
+     
+        }
+    }
+    
+}
