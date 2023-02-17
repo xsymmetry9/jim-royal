@@ -65,7 +65,8 @@
         height: 300px;
     }
     #left{
-        background: url("../images/nutritional.png") no-repeat;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(164, 170, 165, 0.7)),
+        url("../images/nutritional.png");
         align-items: end;
         padding: 0 30px 30px 0;
         p{
@@ -79,7 +80,9 @@
 
     }
     #right{
-        background: url("../images/apifinechemical.png") no-repeat;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(164, 170, 165, 0.7)),
+        url("../images/apifinechemical.png");
+
         padding: 0  30px 30px;
         p{
             &:after{
@@ -100,7 +103,6 @@
             font-size: $fs-700;
             font-weight: $fw-bold;
             text-transform: uppercase;
-            color: $clr-neutral-50;
             @media(max-width: 55em){
                 font-size: $fs-650;
                 align-items: center;
@@ -109,7 +111,6 @@
         }
         p{
             font-size: $fs-400;
-            color: $clr-neutral-900;
             font-weight: 300;
         }
     }
@@ -158,15 +159,50 @@
     }
   }
   #service{
-    padding-top: 5rem;
-    .some_text_container{
-        max-width: 500px;
-        width: 100%;
-        justify-self: end;
+    .content-wrapper{
+        background-color: #FCF6F1;
+        
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 5rem;
+
+        .content{
+       
+            .counter{
+                counter-reset: increment;
+            }
+            $spacing: 3rem;
+            h3{
+                margin-top: 3rem;
+                padding-left: $spacing;
+                font-size: 24px;
+            }
+            ul{
+                list-style: none;
+            }
+            ul > li{
+                padding-left: $spacing;
+                line-height: 2;
+                &::before{
+                    font-size: $fs-600;
+                    color: $clr-green-700;
+                    counter-increment: increment;
+                    content: "0"counter(increment);
+                    padding-right: 1.2rem;
+    
+                }
+            }
+            max-width: 500px;
+            width: 100%;
+            justify-self: end;
+        }
     }
-    .service_container{
+
+    
+    .service-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
+
         @media(max-width: 55em)
         {
             grid-template-columns: 1fr;
@@ -174,12 +210,12 @@
             align-items: center;
         }
     }
-    .circle_wrapper{
-        position: relative;
-
-        // border: 3px solid green;
-
+    .circle-wrapper{
+        @media(max-width: 55em){
+            margin-inline: auto;
+        }
         #circle{
+            position: relative;
             height: 300px;
             width: 300px;
             border-radius: 50%;
@@ -233,41 +269,58 @@
     
 
   }
-//   .service_container{
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     border: 3px solid red;
-//     grid-template-rows: auto;
-//     background-color: #FCF6F1;
-
-//     #circle{    
-//         height: 300px;
-//         width: 300px;
-//         border-radius: 50%;
-//         border: dashed 2px green;
-//     }
-  
-//     .some_text_container{
-//         ul{
-//           list-style: none;
-//         }
-//       }
-
-//     .circle-wrapper{
-//       display: grid;
-//       grid-template-columns: 1fr 1fr;
-//       @media(max-width: 55em){
-//         grid-template-columns: 1fr;
-//       }
-//       max-width: 1100px;
-//       width: 100%;
-  
-  
-//       .text-wrapper{
-//         display: flex;
-//         gap: .5rem;
-//       }
-//     }
-//   }
-  
-  
+  #landing-brands{
+    .brands-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        @media(max-width:55em)
+        {
+            grid-template-columns: 1fr;
+        }
+        .content-wrapper{
+            background-color: $clr-neutral-50;
+            .content-wrapper-wrapper{
+                .content{
+                    padding: 3rem 0;
+                    width: 90%;
+                    margin-inline: auto;
+                    
+                }
+                h2{
+                    font-size: $fs-700;
+                    color: $clr-neutral-900;
+                    text-align:left;
+                }
+            }
+        
+        }
+        .brands-wrapper-container{
+            display: flex;
+            justify-content: end;
+            background-color: white;
+    
+            .brands-wrapper{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                grid-template-rows: auto;
+                align-items:center;
+                // width: 90%;
+      
+                max-width: 450px;
+                width: 100%;
+                .img-wrapper{
+                    padding: 30px 0;
+                    justify-self: center;
+                    img{
+                        width: 140px;
+                        aspect-ratio: 3/2;
+                        object-fit: contain;
+                    }
+                }
+        
+            }
+        }
+      
+    }
+  }
