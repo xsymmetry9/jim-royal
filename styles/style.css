@@ -386,17 +386,11 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
 }
 
 .dropdown-menu[data-visible] {
-  display: inline-block;
+  display: grid;
 }
 
 .down {
   top: 3.7rem;
-}
-
-.right {
-  top: 0;
-  left: 103%;
-  width: 150px;
 }
 
 .dropdown-menu {

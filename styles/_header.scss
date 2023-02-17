@@ -97,8 +97,6 @@ header{
                 display: block;
               }
         }
-    
-    
         .primary-navigation{
             $spacing: 2rem;
 
@@ -146,17 +144,11 @@ header{
 
 //Dropdown menu
 .dropdown-menu[data-visible]{
-    display: inline-block;
+    display: grid;
 }
 
 .down{
     top: 3.7rem;
-
-}
-.right{
-    top: 0;
-    left: 103%;
-    width: 150px;
 }
 .dropdown-menu{
     display:none;
