@@ -615,9 +615,9 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
 
 #service .content-wrapper {
   background-color: #FCF6F1;
+  padding: 5rem 0;
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 5rem;
 }
 #service .content-wrapper .content {
   max-width: 500px;
@@ -628,7 +628,6 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   counter-reset: increment;
 }
 #service .content-wrapper .content h3 {
-  margin-top: 3rem;
   padding-left: 3rem;
   font-size: 24px;
 }
@@ -656,6 +655,9 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
     justify-content: center;
     align-items: center;
   }
+}
+#service .circle-wrapper {
+  padding-top: 2rem;
 }
 @media (max-width: 55em) {
   #service .circle-wrapper {
@@ -730,6 +732,7 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   margin-inline: auto;
 }
 #landing-brands .brands-container .content-wrapper .content-wrapper-wrapper h2 {
+  padding-bottom: 3rem;
   font-size: 1.6rem;
   color: #171717;
   text-align: left;
@@ -755,6 +758,34 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   width: 140px;
   aspect-ratio: 3/2;
   object-fit: contain;
+}
+
+#top-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 100%;
+  text-decoration: none;
+  background-color: #15803d;
+  color: #fafafa;
+  padding: 2rem 0;
+  cursor: pointer;
+}
+#top-btn span {
+  position: relative;
+  text-transform: uppercase;
+}
+#top-btn span::before {
+  content: "↑";
+  font-size: 2rem;
+  position: absolute;
+  left: -26px;
+  bottom: 0;
+}
+#top-btn:is(:hover, :focus) {
+  color: #171717;
+  background-color: #dcfce7;
 }
 
 #intro .display-8 {
