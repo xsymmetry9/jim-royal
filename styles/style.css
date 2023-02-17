@@ -355,6 +355,7 @@ header .primary-header .mobile-nav-toggle img[aria-hidden=false] {
 }
 header .primary-header .primary-navigation a {
   font-size: 0.8125rem;
+  font-weight: 700;
   color: white;
   text-decoration: none;
   line-height: 2;
@@ -363,7 +364,6 @@ header .primary-header .primary-navigation a {
 }
 header .primary-header .primary-navigation a:is(:hover, :focus) {
   color: #15803d;
-  font-weight: 700;
   text-decoration: none;
 }
 @media (min-width: 55em) {
@@ -735,6 +735,11 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   display: flex;
   justify-content: end;
   background-color: white;
+}
+@media (max-width: 55em) {
+  #landing-brands .brands-container .brands-wrapper-container {
+    justify-content: center;
+  }
 }
 #landing-brands .brands-container .brands-wrapper-container .brands-wrapper {
   display: grid;
@@ -1303,6 +1308,45 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
 #cta_about .bg-img .content button {
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+.text-content h1 {
+  text-align: center;
+  padding-top: 5rem;
+}
+.text-content p {
+  padding-top: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.product-container {
+  margin-top: 5rem;
+  padding: 5rem 0;
+  max-width: 1100px;
+  width: 100%;
+  margin-inline: auto;
+}
+.product-container .product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: 30px;
+}
+.product-container .product-cards .card {
+  border: 1px solid lightgray;
+  padding: 1.5rem 0;
+}
+.product-container .product-cards .card h3 {
+  text-align: center;
+  height: 2rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid lightgray;
+}
+.product-container .product-cards .card p {
+  margin: 2rem 0 0 1rem;
+  height: 3rem;
 }
 
 .bg-dark {

@@ -102,6 +102,7 @@ header{
 
             a{
                 font-size: $fs-300;
+                font-weight: $fw-bold;
                 color: white;
                 text-decoration: none;
                 line-height: 2;
@@ -109,7 +110,6 @@ header{
                 font-weight: $fw-semi-bold;
                 &:is(:hover, :focus){
                     color: $clr-green-700;
-                    font-weight: $fw-bold;
                     text-decoration: none;
                 }
             }

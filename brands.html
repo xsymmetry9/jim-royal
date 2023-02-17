@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="./styles/style.css">
     <title>Jim Royal Trading Company</title>
@@ -30,27 +32,21 @@
           </button>
 
           <nav class="primary-navigation">
-            <ul aria-label="Primary" role="list" class="nav-list">
-              <li><a href="about.html" class="lang" key="ABOUT">About</a></li>
+            <ul aria-label="primary" role="list" class="nav-list">
+              <li><a href="about.html" class="lang text-transform-upper" key="ABOUT">about</a></li>
+              <li><a href="brands.html" class ="text-transform-upper lang" key="">Brands</a></li>
               <li class="dropdown">
-                <a href="#" class="lang dropdown-btn" id= "product-dropdown"aria-controls="dropdown-menu" aria-expanded="false" key="BRAND">Products</a>
+                <a href="#" class="text-transform-upper lang dropdown-btn" id= "product-dropdown"aria-controls="dropdown-menu" aria-expanded="false" key="BRAND">products</a>
                 <nav class="dropdown-menu down">
                   <ul aria-label="dropdown" role ="list" class="nav-list">
-                    <li><a href="brands.html">Branded Ingredients</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-btn" id="ingredients-dropdown" aria-controls="dropdown-menu" aria-expanded="false">All Ingredients</a>
-                      <nav class="dropdown-menu right">
-                        <ul aria-label="dropdown" role="list" class="nav-list">
-                          <li><a href="food-ingredient.html">Food Ingredient</a></li>
-                          <li><a href="health-ingredient.html">Health Ingredient</a></li>
-                        </ul>
-                      </nav>
-                    </li>
+                    <li><a href="nutritional.html">nutritional ingredients</a></li>
+                    <li><a href="pharma.html">pharmaceutical ingredients</a></li>
+                 
                   </ul>
                 </nav>
               </li>
-              <li><a href="contact.html" class ="lang" key="CONTACT">Contact</a></li>
-              <li><a href="news.html" class ="lang" key="NEWS">News and Event</a></li>
+              <li><a href="contact.html" class ="text-transform-upper lang" key="CONTACT">Contact</a></li>
+              <li><a href="news.html" class ="text-transform-upper lang" key="NEWS">News and Event</a></li>
             </ul>
           </nav>
 

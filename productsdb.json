@@ -1,297 +1,298 @@
+
 [
- {
-   "編號": 1,
-   "原料藥品項": "Acarbose",
-   "適應症": "糖尿病治療劑"
- },
- {
-   "編號": 2,
-   "原料藥品項": "Aripiprazole",
-   "適應症": "抗精神病用藥"
- },
- {
-   "編號": 3,
-   "原料藥品項": "Acetaminophen (Paracetamol)",
-   "適應症": "解熱、鎮痛劑"
- },
- {
-   "編號": 4,
-   "原料藥品項": "Aceclofenac",
-   "適應症": "消炎鎮痛藥"
- },
- {
-   "編號": 5,
-   "原料藥品項": "Adapalene",
-   "適應症": "維生素A類化合物"
- },
- {
-   "編號": 6,
-   "原料藥品項": "Apixaban",
-   "適應症": "抗凝血劑"
- },
- {
-   "編號": 7,
-   "原料藥品項": "Bacitracin Zinc Non-Sterile",
-   "適應症": "抗菌劑"
- },
- {
-   "編號": 8,
-   "原料藥品項": "Bacitracin Non-Sterile",
-   "適應症": "抗菌劑"
- },
- {
-   "編號": 9,
-   "原料藥品項": "Benazepril Hydrochloride ",
-   "適應症": "高血壓"
- },
- {
-   "編號": 10,
-   "原料藥品項": "Calcium Carbonate",
-   "適應症": "制酸藥"
- },
- {
-   "編號": 11,
-   "原料藥品項": "Candesartan Cilexetil",
-   "適應症": "降血壓藥"
- },
- {
-   "編號": 12,
-   "原料藥品項": "Carbinoxamine maleate",
-   "適應症": "抗組織胺劑"
- },
- {
-   "編號": 13,
-   "原料藥品項": "Celecoxib",
-   "適應症": "非類固醇類抗發炎劑"
- },
- {
-   "編號": 14,
-   "原料藥品項": "Cyproheptadine Hydrochloride",
-   "適應症": "抗組織胺藥"
- },
- {
-   "編號": 15,
-   "原料藥品項": "Carisoprodol USP",
-   "適應症": "骨骼肌弛緩劑"
- },
- {
-   "編號": 16,
-   "原料藥品項": "Citalopram Hydrobromide",
-   "適應症": "治療憂鬱藥"
- },
- {
-   "編號": 17,
-   "原料藥品項": "Cinnarizine",
-   "適應症": "血管擴張劑"
- },
- {
-   "編號": 18,
-   "原料藥品項": "Cephalexin Monohydrate",
-   "適應症": "抗生素"
- },
- {
-   "編號": 19,
-   "原料藥品項": "Cefadroxil Monohydrate",
-   "適應症": "抗生素"
- },
- {
-   "編號": 20,
-   "原料藥品項": "Cefixime",
-   "適應症": "抗生素"
- },
- {
-   "編號": 21,
-   "原料藥品項": "Cefuroxime Axetil Amorphous",
-   "適應症": "抗生素"
- },
- {
-   "編號": 22,
-   "原料藥品項": "Cefuroxime Axetil Amorphous ",
-   "適應症": "抗生素"
- },
- {
-   "編號": 23,
-   "原料藥品項": "Clopidogrel Bisulphate",
-   "適應症": "抗凝血劑"
- },
- {
-   "編號": 24,
-   "原料藥品項": "Clobetasol-17-Propionate\n (Clobetasol Propionate)",
-   "適應症": "抗炎性皮脂醇"
- },
- {
-   "編號": 25,
-   "原料藥品項": "Dried Aluminium Phosphate",
-   "適應症": "制酸劑"
- },
- {
-   "編號": 26,
-   "原料藥品項": "Dried Aluminium Hydroxide Gel",
-   "適應症": "制酸劑"
- },
- {
-   "編號": 27,
-   "原料藥品項": "Desmopressin Acetate",
-   "適應症": "血管加壓素衍生物、治療尿崩症、夜遺尿\n、血友病及類血友病"
- },
- {
-   "編號": 28,
-   "原料藥品項": "Dextromethorphan HBr",
-   "適應症": "鎮咳藥"
- },
- {
-   "編號": 29,
-   "原料藥品項": "Duloxetine HCl",
-   "適應症": "重鬱症、糖尿病週邊神經痛、廣泛性焦慮症"
- },
- {
-   "編號": 30,
-   "原料藥品項": "Erythromycin Ethylsuccinate \"Ercros Industrial S.A.\"",
-   "適應症": "抗生素"
- },
- {
-   "編號": 31,
-   "原料藥品項": "Ethambutol HCl",
-   "適應症": "抗結核菌藥"
- },
- {
-   "編號": 32,
-   "原料藥品項": "Erythromycin Estolate",
-   "適應症": "抗生素"
- },
- {
-   "編號": 33,
-   "原料藥品項": "Erythromycin Estolate",
-   "適應症": "抗生素"
- },
- {
-   "編號": 34,
-   "原料藥品項": "Ergotamine Tartrate",
-   "適應症": "治療頭痛藥"
- },
- {
-   "編號": 35,
-   "原料藥品項": "Ergometrine Maleate",
-   "適應症": "子宮收縮藥"
- },
- {
-   "編號": 36,
-   "原料藥品項": "Etodolac",
-   "適應症": "消炎鎮痛藥"
- },
- {
-   "編號": 37,
-   "原料藥品項": "Flomoxef Sodium",
-   "適應症": "抗生素"
- },
- {
-   "編號": 38,
-   "原料藥品項": "Flurbiproben",
-   "適應症": "消炎藥、鎮痛藥"
- },
- {
-   "編號": 39,
-   "原料藥品項": "Flunarizine HCl",
-   "適應症": "改善血液循環、末稍血液循環障礙"
- },
- {
-   "編號": 40,
-   "原料藥品項": "Fusidic Acid",
-   "適應症": "抗菌劑"
- },
- {
-   "編號": 41,
-   "原料藥品項": "Gabapentine",
-   "適應症": "治癲癇、帶狀庖疹後神經痛"
- },
- {
-   "編號": 42,
-   "原料藥品項": "Loperamide HCl",
-   "適應症": "止瀉劑"
- },
- {
-   "編號": 43,
-   "原料藥品項": "Meclizine HCl",
-   "適應症": "抗噁心藥"
- },
- {
-   "編號": 44,
-   "原料藥品項": "Metformin Hydrochloride",
-   "適應症": "糖尿病治療藥"
- },
- {
-   "編號": 45,
-   "原料藥品項": "Mometasone Furoate　",
-   "適應症": "腎上腺皮質類固醇"
- },
- {
-   "編號": 46,
-   "原料藥品項": "Niacin",
-   "適應症": "菸鹼酸缺乏症"
- },
- {
-   "編號": 47,
-   "原料藥品項": "Niacinamide　",
-   "適應症": "菸鹼酸缺乏症"
- },
- {
-   "編號": 48,
-   "原料藥品項": "Naftifine HCl",
-   "適應症": "局部抗黴藥"
- },
- {
-   "編號": 49,
-   "原料藥品項": "Nystatin",
-   "適應症": "抗生素"
- },
- {
-   "編號": 50,
-   "原料藥品項": "Neomycin Sulfate",
-   "適應症": "抗生素"
- },
- {
-   "編號": 51,
-   "原料藥品項": "Olanzapine",
-   "適應症": "抗精神分裂藥物"
- },
- {
-   "編號": 52,
-   "原料藥品項": "Ondansetron HCl",
-   "適應症": "治療化學療法和放射性療法引起之嘔吐"
- },
- {
-   "編號": 54,
-   "原料藥品項": "Ondansetron HCl dihydrate",
-   "適應症": "治療化學療法和放射性療法引起之嘔吐"
- },
- {
-   "編號": 56,
-   "原料藥品項": "Oxetacaine (Oxethazaine)",
-   "適應症": "胃黏膜局部麻醉劑"
- },
- {
-   "編號": 58,
-   "原料藥品項": "Pipracillin and Tazobactam",
-   "適應症": "抗生素"
- },
- {
-   "編號": 60,
-   "原料藥品項": "Polymyxin B sulphate",
-   "適應症": "抗生素"
- },
- {
-   "編號": 61,
-   "原料藥品項": "Pyrazinamide",
-   "適應症": "制結核菌藥"
- },
- {
-   "編號": 62,
-   "原料藥品項": "Rabeprazole Na",
-   "適應症": "胃酸抑制劑"
- },
- {
-   "編號": 63,
-   "原料藥品項": "Rifampicin",
-   "適應症": "結核菌性感染症"
- }
+    {
+      "id": 1,
+      "product": "Acarbose",
+      "description": "糖尿病治療劑"
+    },
+    {
+      "id": 2,
+      "product": "Aripiprazole",
+      "description": "抗精神病用藥"
+    },
+    {
+      "id": 3,
+      "product": "Acetaminophen (Paracetamol)",
+      "description": "解熱、鎮痛劑"
+    },
+    {
+      "id": 4,
+      "product": "Aceclofenac",
+      "description": "消炎鎮痛藥"
+    },
+    {
+      "id": 5,
+      "product": "Adapalene",
+      "description": "維生素A類化合物"
+    },
+    {
+      "id": 6,
+      "product": "Apixaban",
+      "description": "抗凝血劑"
+    },
+    {
+      "id": 7,
+      "product": "Bacitracin Zinc Non-Sterile",
+      "description": "抗菌劑"
+    },
+    {
+      "id": 8,
+      "product": "Bacitracin Non-Sterile",
+      "description": "抗菌劑"
+    },
+    {
+      "id": 9,
+      "product": "Benazepril Hydrochloride ",
+      "description": "高血壓"
+    },
+    {
+      "id": 10,
+      "product": "Calcium Carbonate",
+      "description": "制酸藥"
+    },
+    {
+      "id": 11,
+      "product": "Candesartan Cilexetil",
+      "description": "降血壓藥"
+    },
+    {
+      "id": 12,
+      "product": "Carbinoxamine maleate",
+      "description": "抗組織胺劑"
+    },
+    {
+      "id": 13,
+      "product": "Celecoxib",
+      "description": "非類固醇類抗發炎劑"
+    },
+    {
+      "id": 14,
+      "product": "Cyproheptadine Hydrochloride",
+      "description": "抗組織胺藥"
+    },
+    {
+      "id": 15,
+      "product": "Carisoprodol USP",
+      "description": "骨骼肌弛緩劑"
+    },
+    {
+      "id": 16,
+      "product": "Citalopram Hydrobromide",
+      "description": "治療憂鬱藥"
+    },
+    {
+      "id": 17,
+      "product": "Cinnarizine",
+      "description": "血管擴張劑"
+    },
+    {
+      "id": 18,
+      "product": "Cephalexin Monohydrate",
+      "description": "抗生素"
+    },
+    {
+      "id": 19,
+      "product": "Cefadroxil Monohydrate",
+      "description": "抗生素"
+    },
+    {
+      "id": 20,
+      "product": "Cefixime",
+      "description": "抗生素"
+    },
+    {
+      "id": 21,
+      "product": "Cefuroxime Axetil Amorphous",
+      "description": "抗生素"
+    },
+    {
+      "id": 22,
+      "product": "Cefuroxime Axetil Amorphous ",
+      "description": "抗生素"
+    },
+    {
+      "id": 23,
+      "product": "Clopidogrel Bisulphate",
+      "description": "抗凝血劑"
+    },
+    {
+      "id": 24,
+      "product": "Clobetasol-17-Propionate\n (Clobetasol Propionate)",
+      "description": "抗炎性皮脂醇"
+    },
+    {
+      "id": 25,
+      "product": "Dried Aluminium Phosphate",
+      "description": "制酸劑"
+    },
+    {
+      "id": 26,
+      "product": "Dried Aluminium Hydroxide Gel",
+      "description": "制酸劑"
+    },
+    {
+      "id": 27,
+      "product": "Desmopressin Acetate",
+      "description": "血管加壓素衍生物、治療尿崩症、夜遺尿\n、血友病及類血友病"
+    },
+    {
+      "id": 28,
+      "product": "Dextromethorphan HBr",
+      "description": "鎮咳藥"
+    },
+    {
+      "id": 29,
+      "product": "Duloxetine HCl",
+      "description": "重鬱症、糖尿病週邊神經痛、廣泛性焦慮症"
+    },
+    {
+      "id": 30,
+      "product": "Erythromycin Ethylsuccinate \"Ercros Industrial S.A.\"",
+      "description": "抗生素"
+    },
+    {
+      "id": 31,
+      "product": "Ethambutol HCl",
+      "description": "抗結核菌藥"
+    },
+    {
+      "id": 32,
+      "product": "Erythromycin Estolate",
+      "description": "抗生素"
+    },
+    {
+      "id": 33,
+      "product": "Erythromycin Estolate",
+      "description": "抗生素"
+    },
+    {
+      "id": 34,
+      "product": "Ergotamine Tartrate",
+      "description": "治療頭痛藥"
+    },
+    {
+      "id": 35,
+      "product": "Ergometrine Maleate",
+      "description": "子宮收縮藥"
+    },
+    {
+      "id": 36,
+      "product": "Etodolac",
+      "description": "消炎鎮痛藥"
+    },
+    {
+      "id": 37,
+      "product": "Flomoxef Sodium",
+      "description": "抗生素"
+    },
+    {
+      "id": 38,
+      "product": "Flurbiproben",
+      "description": "消炎藥、鎮痛藥"
+    },
+    {
+      "id": 39,
+      "product": "Flunarizine HCl",
+      "description": "改善血液循環、末稍血液循環障礙"
+    },
+    {
+      "id": 40,
+      "product": "Fusidic Acid",
+      "description": "抗菌劑"
+    },
+    {
+      "id": 41,
+      "product": "Gabapentine",
+      "description": "治癲癇、帶狀庖疹後神經痛"
+    },
+    {
+      "id": 42,
+      "product": "Loperamide HCl",
+      "description": "止瀉劑"
+    },
+    {
+      "id": 43,
+      "product": "Meclizine HCl",
+      "description": "抗噁心藥"
+    },
+    {
+      "id": 44,
+      "product": "Metformin Hydrochloride",
+      "description": "糖尿病治療藥"
+    },
+    {
+      "id": 45,
+      "product": "Mometasone Furoate　",
+      "description": "腎上腺皮質類固醇"
+    },
+    {
+      "id": 46,
+      "product": "Niacin",
+      "description": "菸鹼酸缺乏症"
+    },
+    {
+      "id": 47,
+      "product": "Niacinamide　",
+      "description": "菸鹼酸缺乏症"
+    },
+    {
+      "id": 48,
+      "product": "Naftifine HCl",
+      "description": "局部抗黴藥"
+    },
+    {
+      "id": 49,
+      "product": "Nystatin",
+      "description": "抗生素"
+    },
+    {
+      "id": 50,
+      "product": "Neomycin Sulfate",
+      "description": "抗生素"
+    },
+    {
+      "id": 51,
+      "product": "Olanzapine",
+      "description": "抗精神分裂藥物"
+    },
+    {
+      "id": 52,
+      "product": "Ondansetron HCl",
+      "description": "治療化學療法和放射性療法引起之嘔吐"
+    },
+    {
+      "id": 54,
+      "product": "Ondansetron HCl dihydrate",
+      "description": "治療化學療法和放射性療法引起之嘔吐"
+    },
+    {
+      "id": 56,
+      "product": "Oxetacaine (Oxethazaine)",
+      "description": "胃黏膜局部麻醉劑"
+    },
+    {
+      "id": 58,
+      "product": "Pipracillin and Tazobactam",
+      "description": "抗生素"
+    },
+    {
+      "id": 60,
+      "product": "Polymyxin B sulphate",
+      "description": "抗生素"
+    },
+    {
+      "id": 61,
+      "product": "Pyrazinamide",
+      "description": "制結核菌藥"
+    },
+    {
+      "id": 62,
+      "product": "Rabeprazole Na",
+      "description": "胃酸抑制劑"
+    },
+    {
+      "id": 63,
+      "product": "Rifampicin",
+      "description": "結核菌性感染症"
+    }
 ]
