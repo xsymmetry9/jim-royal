@@ -65,7 +65,7 @@
         height: 300px;
     }
     #left{
-        background: url("../images/nutritional.png");
+        background: url("../images/nutritional.png") no-repeat;
         align-items: end;
         padding: 0 30px 30px 0;
         p{
@@ -79,7 +79,7 @@
 
     }
     #right{
-        background: url("../images/apifinechemical.png");
+        background: url("../images/apifinechemical.png") no-repeat;
         padding: 0  30px 30px;
         p{
             &:after{
