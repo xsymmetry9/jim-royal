@@ -161,3 +161,10 @@ $(document).ready(function() {
       $(this).text(arrLang[lang][$(this).attr("key")]);
     });
   });
+
+  /*top button*/
+
+  const topbtn = document.getElementById("top-btn");
+  topbtn.addEventListener("click", () =>{
+    console.log("goes to the top");
+  })
