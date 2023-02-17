@@ -25,19 +25,19 @@ $clr-green-50: #f0fdf4;
 $clr-red-600: #dc2626;
 
 $clr-accent: var(--clr-red-600);
-$ff-primary: 'Raleway', sans-serif;
+$ff-primary: 'Roboto', sans-serif;
 $ff-body: var(--ff-primary);
 $ff-heading: var(--ff-primary);
 
-$fw-regular: 400;
-$fw-semi-bold: 600;
+$fw-regular: 300;
+$fw-semi-bold: 500;
 $fw-bold: 700;
 $fs-300: .8125rem;
 $fs-400: .875rem;
 $fs-500: .9375rem;
 $fs-600: 1rem;
 $fs-650: 1.2rem;
-$fs-700: 1.875rem;
+$fs-700: 1.6rem;
 $fs-800: 2.5rem;
 $fs-900: 3.5rem;
 
@@ -84,7 +84,6 @@ $size-900: 5rem;
 }
 .button-primary-dark,
 .button-primary-light {
-  border-radius: 6px;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
@@ -92,7 +91,7 @@ $size-900: 5rem;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
-  padding: 6px 16px;
+  padding: 10px 14px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -143,7 +142,8 @@ $size-900: 5rem;
     font-weight: $fw-semi-bold;
 }
 .clr-red{
-    color: blue}
+    color: $clr-red-600;
+}
 .f-cap{
     text-transform: uppercase;
 }
@@ -169,4 +169,8 @@ $size-900: 5rem;
 }
 .header-spacing{
     padding-top: 3rem;
+  }
+
+  .text-transform-upper{
+    text-transform: uppercase;
   }

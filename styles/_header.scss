@@ -26,8 +26,9 @@ header{
         }
         .title-logo{
             h4{
-                font-size: 1rem;
-                color: black;
+                font-size: $fs-600;
+                font-weight: $fw-bold;
+                color: $clr-neutral-900;
                 &:is(:hover,:focus){
                     color:$clr-green-700;
                     
@@ -99,31 +100,44 @@ header{
     
     
         .primary-navigation{
-            .nav-list{
-                display: flex;
-                gap: clamp($size-400, 5vw, $size-700);
-                list-style: none;
+            $spacing: 2rem;
 
-                ul{
-                    list-style: none;
-                    display: inline-block;
-                }
-                a{
-                    font-size: .9rem;
-                    color: $clr-neutral-900;
-                    @media (max-width: $layout-small){
-                        font-size: 3rem;
-                        color: white;
-                    }
-                    font-weight: 600;
+            a{
+                font-size: $fs-300;
+                color: white;
+                text-decoration: none;
+                line-height: 2;
+                margin-left: $spacing;
+                font-weight: $fw-semi-bold;
+                &:is(:hover, :focus){
+                    color: $clr-green-700;
+                    font-weight: $fw-bold;
                     text-decoration: none;
-                    &:is(:hover, :focus){
-                        color: $clr-green-700;
-                        font-weight: $fw-bold;
-                        text-decoration: none;
+                }
+            }
+            @media (min-width: 55em)
+            {
+                .nav-list{
+                    display: flex;
+                    gap: clamp($size-400, 5vw, $size-700);
+                    list-style: none;
+    
+                    ul{
+                        list-style: none;
+                        display: inline-block;
+                    }
+                    a{
+                        color: $clr-neutral-900;
+                        margin: 0;
+                        &:is(:hover, :focus){
+                            color: $clr-green-700;
+              
+                        }
+                  
                     }
                 }
             }
+           
             
         }
     }
@@ -132,7 +146,7 @@ header{
 
 //Dropdown menu
 .dropdown-menu[data-visible]{
-    display: block;
+    display: inline-block;
 }
 
 .down{
@@ -146,25 +160,38 @@ header{
 }
 .dropdown-menu{
     display:none;
-    z-index: 1;
-    position: absolute;
-    background-color: rgba(250,250,250,.9);
-    border-radius: 5px;
-    padding: 1.3rem 1rem;
-    cursor: pointer;
-
     a{
-        font-family: raleway, Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-        font-size: .9rem;
+        font-family: roboto, Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+        font-size: $fs-400;
         padding-bottom: .5rem;
-        color: red;
-        line-height: 1.5;
-        color: $clr-neutral-900;
         text-decoration: none;
-        &:is(:hover,:focus){
-            color: $clr-green-700;
+        line-height: 2;
+        color: white;
+        margin-left: 2rem;
+
+    }
+
+    @media (min-width: 55em){
+        position: absolute;
+        background-color: rgba(250,250,250,.9);
+        border-radius: 5px;
+        padding: 1.3rem 1rem;
+        cursor: pointer;
+        @media (max-width: $layout-small){
+            z-index: 10;
+            width: 250px;
+            top: 0;
+        }
+    
+        a{
+            line-height: 1.5;
+            color: $clr-neutral-900;
+            &:is(:hover,:focus){
+                color: $clr-green-700;
+            }
         }
     }
+
 
 }
 //Translate Button
@@ -192,6 +219,6 @@ header{
     }
   }
   .active{
-    border-bottom: 3px double red;
+    // border-bottom: 3px double red;
   }
   

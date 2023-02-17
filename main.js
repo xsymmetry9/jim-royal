@@ -22,7 +22,21 @@ navToggle.addEventListener('click',() =>{
   primaryNav.toggleAttribute("data-visible");
   primaryHeader.toggleAttribute("data-overlay");
 });
+function getWidth(){
+  return primaryHeader.clientWidth;
+}
+function getScreen(width)
+{
+  if(width >= 880)
+  {
+    return "big";
+  }
+  else{
+    return "small";
+  }
+}
 
+console.log(getScreen(getWidth()));
 
 //Dropdown Button
 // Bug: Can't close the dropdown button if clicked outside
@@ -30,23 +44,26 @@ btn.forEach(button => {
   button.addEventListener('click', function(e){
     var getButton = document.getElementById(e.target.id);
     getbtn = getButton.nextElementSibling;
-    //When it's clicked, checks if the attribute is true, and if its false,
-    //change the attribue to true, else, change it to false.
-    if (getButton.getAttribute('aria-expanded') ==="false")
-    {
-      getButton.setAttribute("aria-expanded", true);
-    }
-    else{
-      getButton.setAttribute("aria-expanded", false);
-    }
-    //Every time you click the button, it will toggle the attribute 'data-visible'
-    getbtn.toggleAttribute('data-visible');
-    
+  
+      //When it's clicked, checks if the attribute is true, and if its false,
+      //change the attribue to true, else, change it to false.
+      if (getButton.getAttribute('aria-expanded') ==="false")
+      {
+        getButton.setAttribute("aria-expanded", true);
+      }
+      else{
+        getButton.setAttribute("aria-expanded", false);
+      }
+      //Every time you click the button, it will toggle the attribute 'data-visible'
+      getbtn.toggleAttribute('data-visible');
+  
+
+
     // getbtn.hasAttribute('data-visible') ? getButton.setAttribute('aria-expanded', false):
     // getButton.setAttribute('aria-expanded', true);
   });
 });
-
+// ***************************** For Product List
 //This methods creates the user to select an item from the menu
 //It hides the menu and then displays the item without changing the site
 //Gets all the buttons from the Product Menu
@@ -102,7 +119,7 @@ gobackBtns.forEach(gobackBtn => {
   });
 });
 
-
+//******************************End of Product List *****************/
 
 
 //Building a dictionary
