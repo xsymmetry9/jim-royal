@@ -1310,41 +1310,120 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   text-transform: uppercase;
 }
 
-.text-content h1 {
-  text-align: center;
-  padding-top: 5rem;
+.bg-pharma {
+  background: url(../images/bg-pharma.png) no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.text-content p {
-  padding-top: 0.5rem;
+
+#pharma-ingredients .text-content {
+  color: #f0fdf4;
+}
+#pharma-ingredients .text-content h1 {
+  font-size: 50px;
+  text-align: center;
+  padding: 7rem 0 0 1rem;
+}
+@media (max-width: 55em) {
+  #pharma-ingredients .text-content h1 {
+    font-size: 1.2rem;
+    padding-left: 0.5em;
+    padding-top: 5rem;
+  }
+}
+#pharma-ingredients .text-content p {
+  padding-bottom: 5rem;
   text-align: center;
   font-size: 1rem;
   font-weight: 300;
 }
+@media (max-width: 55em) {
+  #pharma-ingredients .text-content p {
+    font-size: 0.65rem;
+    width: 90%;
+    margin-inline: auto;
+  }
+}
 
-.product-container {
-  margin-top: 5rem;
+#pharma-ingredients .nav-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+#pharma-ingredients .nav-container .alpha-nav {
+  max-width: 600px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 3rem;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 0 18px 16px -14px #9fa1a0;
+}
+#pharma-ingredients .nav-container .alpha-nav h3 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 55em) {
+  #pharma-ingredients .nav-container .alpha-nav h3 {
+    font-size: 1rem;
+  }
+}
+#pharma-ingredients .nav-container .alpha-nav .alphabets {
+  display: grid;
+  grid-template-columns: repeat(30, 20px);
+  grid-template-rows: 20px;
+}
+#pharma-ingredients .nav-container .alpha-nav .alphabets .alphabet {
+  outline: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+#pharma-ingredients .nav-container .alpha-nav .alphabets .alphabet span {
+  text-align: center;
+}
+#pharma-ingredients .nav-container .alpha-nav .alphabets .alphabet:is(:hover, :focus) {
+  background-color: green;
+  outline-color: green;
+  color: white;
+}
+
+.product-container-container {
+  background-color: #619272;
+  color: #f0fdf4;
+}
+.product-container-container h2 {
+  display: inline-block;
+  font-size: 4rem;
+  padding: 3rem 2rem 0 2rem;
+  font-weight: 500;
+}
+.product-container-container p {
+  display: inline-block;
+}
+
+#pharma-ingredients .product-container {
   padding: 5rem 0;
   max-width: 1100px;
   width: 100%;
   margin-inline: auto;
 }
-.product-container .product-cards {
+#pharma-ingredients .product-container .product-cards {
+  padding: 0 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
   gap: 30px;
 }
-.product-container .product-cards .card {
+#pharma-ingredients .product-container .product-cards .card {
   border: 1px solid lightgray;
   padding: 1.5rem 0;
 }
-.product-container .product-cards .card h3 {
+#pharma-ingredients .product-container .product-cards .card h3 {
   text-align: center;
   height: 2rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid lightgray;
 }
-.product-container .product-cards .card p {
+#pharma-ingredients .product-container .product-cards .card p {
   margin: 2rem 0 0 1rem;
   height: 3rem;
 }

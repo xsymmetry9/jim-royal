@@ -1,9 +1,4 @@
-const data = import('./productsdb.json', {
-    assert: {
-        type: 'json'
-    }
-});
-
+const data = import('./productsdb.json',{assert:{type: 'json'}});
 
 data.then(d =>
     d.default.forEach(item => {
