@@ -35,9 +35,6 @@ function getScreen(width)
     return "small";
   }
 }
-
-console.log(getScreen(getWidth()));
-
 //Dropdown Button
 // Bug: Can't close the dropdown button if clicked outside
 btn.forEach(button => {
