@@ -161,7 +161,3 @@ $(document).ready(function() {
 
   /*top button*/
 
-  const topbtn = document.getElementById("top-btn");
-  topbtn.addEventListener("click", () =>{
-    console.log("goes to the top");
-  })
