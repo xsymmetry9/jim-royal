@@ -1403,16 +1403,18 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   grid-template-rows: 20px;
   gap: 0.2rem;
 }
-#pharma-ingredients .nav-container .alpha-nav .alphabets .alphabet {
+#pharma-ingredients .nav-container .alpha-nav .alphabets button {
   outline: 1px solid black;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border: none;
 }
-#pharma-ingredients .nav-container .alpha-nav .alphabets .alphabet span {
+#pharma-ingredients .nav-container .alpha-nav .alphabets button span {
   text-align: center;
   text-transform: uppercase;
 }
-#pharma-ingredients .nav-container .alpha-nav .alphabets .alphabet:is(:hover, :focus) {
+#pharma-ingredients .nav-container .alpha-nav .alphabets button:is(:hover, :focus) {
   background-color: green;
   outline-color: green;
   color: white;
