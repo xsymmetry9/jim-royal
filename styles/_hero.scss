@@ -326,34 +326,3 @@
       
     }
   }
-#top-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    width: 100%;
-    text-decoration: none;
-    background-color: $clr-green-700;
-    color: $clr-neutral-50;
-    padding: 2rem 0;
-    cursor: pointer;
-    span{
-        position: relative;
-        text-transform: uppercase;
-        &::before{
-            content: "\2191";
-            font-size: 2rem;
-            position: absolute;
-            left: -26px;
-            bottom: 0;
-        }
-    }
-    &:is(:hover,:focus){
-        color: $clr-neutral-900;
-        background-color: $clr-green-100;
-    }
-
-   
-   
-    
-}

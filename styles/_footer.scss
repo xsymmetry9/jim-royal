@@ -1,5 +1,4 @@
-
-  footer{
+footer{
     h4{
         font-size: 1.5rem;
         color: darkgreen;
@@ -38,7 +37,7 @@
         grid-area: logo-social;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: .5rem;
         justify-content: center;
         align-items: center;
     }
@@ -77,6 +76,8 @@
 
     }
     .primary-footer-info{
+        color:$clr-neutral-900;
+        font-family: $ff-primary;
         font-size: .9rem;
         display: grid;
         gap: 10px;
@@ -86,7 +87,26 @@
         .contact-wrap{
             display: flex;
             gap: 20px;
+            a,p{
+                color:$clr-neutral-900;
+                text-decoration: none;
+                &:is(:hover,:focus){
+                    color: $clr-green-700;
+                    font-weight: bold;
+                }
+            }
+            
         }
     }
+  }
+  .copyright{
+    border-top: 1px lightgray solid;
+    p{
+        font-family: $ff-primary;
+        font-size: $fs-400;
+        font-weight: $fw-regular;
+        padding: 1rem 0;
 
+        text-align: center;
+    }
   }

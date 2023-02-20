@@ -36,9 +36,9 @@
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
-  font-family: raleway, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 14px;
-  font-weight: 600;
+  font-family: roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 0.875rem;
+  font-weight: 500;
   line-height: 20px;
   padding: 10px 14px;
   position: relative;
@@ -53,22 +53,51 @@
   box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
 }
 .button-primary-light:hover, .button-primary-light:focus {
-  background-color: green;
+  background-color: #16a34a;
   color: white;
   box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
 }
 
 .button-primary-dark {
-  background-color: green;
+  background-color: #16a34a;
   color: #fff;
   border: 1px solid rgba(27, 31, 35, 0.15);
   box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
 }
 .button-primary-dark:focus, .button-primary-dark:hover {
-  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
   color: #171717;
+  border-color: #16a34a;
   background-color: #f0fdf4;
   outline: none;
+}
+
+.go-to-top-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #16a34a;
+  font-size: 1.5rem;
+  width: 100%;
+  text-decoration: none;
+  color: #fafafa;
+  padding: 2rem 0;
+  cursor: pointer;
+}
+.go-to-top-btn span {
+  position: relative;
+  text-transform: uppercase;
+}
+.go-to-top-btn span::before {
+  content: "↑";
+  font-size: 2rem;
+  position: absolute;
+  left: -26px;
+  bottom: 0;
+}
+.go-to-top-btn:is(:hover, :focus) {
+  color: #171717;
+  background-color: white;
+  outline: 1px solid #16a34a;
 }
 
 .font-primary-dark {
@@ -168,9 +197,9 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
-  font-family: raleway, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 14px;
-  font-weight: 600;
+  font-family: roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 0.875rem;
+  font-weight: 500;
   line-height: 20px;
   padding: 10px 14px;
   position: relative;
@@ -185,22 +214,51 @@ body {
   box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
 }
 .button-primary-light:hover, .button-primary-light:focus {
-  background-color: green;
+  background-color: #16a34a;
   color: white;
   box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
 }
 
 .button-primary-dark {
-  background-color: green;
+  background-color: #16a34a;
   color: #fff;
   border: 1px solid rgba(27, 31, 35, 0.15);
   box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
 }
 .button-primary-dark:focus, .button-primary-dark:hover {
-  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
   color: #171717;
+  border-color: #16a34a;
   background-color: #f0fdf4;
   outline: none;
+}
+
+.go-to-top-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #16a34a;
+  font-size: 1.5rem;
+  width: 100%;
+  text-decoration: none;
+  color: #fafafa;
+  padding: 2rem 0;
+  cursor: pointer;
+}
+.go-to-top-btn span {
+  position: relative;
+  text-transform: uppercase;
+}
+.go-to-top-btn span::before {
+  content: "↑";
+  font-size: 2rem;
+  position: absolute;
+  left: -26px;
+  bottom: 0;
+}
+.go-to-top-btn:is(:hover, :focus) {
+  color: #171717;
+  background-color: white;
+  outline: 1px solid #16a34a;
 }
 
 .font-primary-dark {
@@ -757,34 +815,6 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   width: 140px;
   aspect-ratio: 3/2;
   object-fit: contain;
-}
-
-#top-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  width: 100%;
-  text-decoration: none;
-  background-color: #15803d;
-  color: #fafafa;
-  padding: 2rem 0;
-  cursor: pointer;
-}
-#top-btn span {
-  position: relative;
-  text-transform: uppercase;
-}
-#top-btn span::before {
-  content: "↑";
-  font-size: 2rem;
-  position: absolute;
-  left: -26px;
-  bottom: 0;
-}
-#top-btn:is(:hover, :focus) {
-  color: #171717;
-  background-color: #dcfce7;
 }
 
 #intro .display-8 {
@@ -1369,7 +1399,7 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
 }
 #pharma-ingredients .nav-container .alpha-nav .alphabets {
   display: grid;
-  grid-template-columns: repeat(30, 20px);
+  grid-template-columns: repeat(auto-fill, minxmax(20px, 40px));
   grid-template-rows: 20px;
 }
 #pharma-ingredients .nav-container .alpha-nav .alphabets .alphabet {
@@ -1379,6 +1409,7 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
 }
 #pharma-ingredients .nav-container .alpha-nav .alphabets .alphabet span {
   text-align: center;
+  text-transform: uppercase;
 }
 #pharma-ingredients .nav-container .alpha-nav .alphabets .alphabet:is(:hover, :focus) {
   background-color: green;
@@ -1644,7 +1675,7 @@ footer .primary-footer-logo-social {
   grid-area: logo-social;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 0.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -1683,6 +1714,8 @@ footer .footer-nav .flow {
   display: grid;
 }
 footer .primary-footer-info {
+  color: #171717;
+  font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
   display: grid;
   gap: 10px;
@@ -1693,6 +1726,25 @@ footer .primary-footer-info {
 footer .primary-footer-info .contact-wrap {
   display: flex;
   gap: 20px;
+}
+footer .primary-footer-info .contact-wrap a, footer .primary-footer-info .contact-wrap p {
+  color: #171717;
+  text-decoration: none;
+}
+footer .primary-footer-info .contact-wrap a:is(:hover, :focus), footer .primary-footer-info .contact-wrap p:is(:hover, :focus) {
+  color: #15803d;
+  font-weight: bold;
+}
+
+.copyright {
+  border-top: 1px lightgray solid;
+}
+.copyright p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

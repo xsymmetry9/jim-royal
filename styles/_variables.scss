@@ -87,9 +87,9 @@ $size-900: 5rem;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
-  font-family: raleway, Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  font-size: 14px;
-  font-weight: 600;
+  font-family: roboto, Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: $fs-400;
+  font-weight: $fw-semi-bold;
   line-height: 20px;
   padding: 10px 14px;
   position: relative;
@@ -105,26 +105,54 @@ $size-900: 5rem;
     box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
     &:hover,
     &:focus{
-        background-color: green;
+        background-color: $clr-green-600;
         color: white;
         box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
     }
 }
 
 .button-primary-dark{
-    background-color: green;
+    background-color: $clr-green-600;
     color: #fff;
     border: 1px solid rgba(27, 31, 35, .15);
     box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
     &:focus,
     &:hover{
-        box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
         color: $clr-neutral-900;
+        border-color: $clr-green-600;
         background-color: $clr-green-50;
         outline: none;
     }
 }
 
+.go-to-top-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $clr-green-600;
+    font-size: 1.5rem;
+    width: 100%;
+    text-decoration: none;
+    color: $clr-neutral-50;
+    padding: 2rem 0;
+    cursor: pointer;
+    span{
+        position: relative;
+        text-transform: uppercase;
+        &::before{
+            content: "\2191";
+            font-size: 2rem;
+            position: absolute;
+            left: -26px;
+            bottom: 0;
+        }
+    }
+    &:is(:hover,:focus){
+        color: $clr-neutral-900;
+        background-color: white;
+        outline: 1px solid $clr-green-600;
+    }
+}
 // Fonts
 .font-primary-dark{
     color: $clr-neutral-900;
@@ -171,6 +199,6 @@ $size-900: 5rem;
     padding-top: 3rem;
   }
 
-  .text-transform-upper{
+.text-transform-upper{
     text-transform: uppercase;
   }

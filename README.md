@@ -12,3 +12,7 @@ To watch Sass
 
  live Website: 
  https://xsymmetry9.github.io/jim-royal/index.html
+
+ Some notes for page:
+ - Change color button for the selected page and disable it
+ - 

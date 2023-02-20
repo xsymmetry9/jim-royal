@@ -17,8 +17,7 @@
 </head>
 <body>
   <header>
-    <header>
-      <div class="primary-header position-absolute">
+    <div class="primary-header position-absolute">
         <div class="nav-wrapper container">
           <a class="title-logo" href="index.html" aria-label="home">
             <img src="images/logo-green.png" height="38" width="38" alt="">
@@ -29,39 +28,26 @@
             <img class="icon-close" src="images/close.png" alt="close" aria-hidden="false">
             <span class="visually-hidden">Menu</span>
           </button>
-  
+
           <nav class="primary-navigation">
             <ul aria-label="primary" role="list" class="nav-list">
-              <li><a href="about.html" class="lang" key="ABOUT">About</a></li>
-              <li class="dropdown">
-                <a href="#" class="lang dropdown-btn" id= "product-dropdown"aria-controls="dropdown-menu" aria-expanded="false" key="BRAND">Products</a>
-                <nav class="dropdown-menu down">
-                  <ul aria-label="dropdown" role ="list" class="nav-list">
-                    <li><a href="brands.html">Branded Ingredients</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-btn" id="ingredients-dropdown" aria-controls="dropdown-menu" aria-expanded="false">All Ingredients</a>
-                      <nav class="dropdown-menu right">
-                        <ul aria-label="dropdown" role="list" class="nav-list">
-                          <li><a href="food-ingredient.html">Food Ingredient</a></li>
-                          <li><a href="health-ingredient.html">Health Ingredient</a></li>
-                        </ul>
-                      </nav>
-                    </li>
-                  </ul>
-                </nav>
-              </li>
-              <li><a href="contact.html" class ="lang" key="CONTACT">Contact</a></li>
-              <li><a href="news.html" class ="lang" key="NEWS">News and Event</a></li>
+              <li><a href="about.html" class="lang text-transform-upper" key="ABOUT">about</a></li>
+              <li><a href="brands.html" class ="text-transform-upper lang" key="">Brands</a></li>
+              <li><a href="pharma.html" class ="text-transform-upper lang" key="products">Products</a></li>
+              <li><a href="contact.html" class ="text-transform-upper lang" key="CONTACT">Contact</a></li>
+              <li><a href="news.html" class ="text-transform-upper lang" key="NEWS">News and Event</a></li>
             </ul>
           </nav>
-  
+
           <div class="mobile-translate-toggle translate-nav-wrap">
             <a class="translate english-translate active" id ="en-us">EN</a>
             <a class="translate chinese-translate" id="zh-tw">CH</a>
           </div>
         </div>
+
+
+           
       </div>
-  </header>
 </header>
     <main>
       <section class="bg-dark">
@@ -162,40 +148,52 @@
 
     </main>
     <footer>
-        <div class="container">
-            <div class="primary-footer-wrapper">
-              <div class="primary-footer-logo-social">
-                <a class="title" href="#" aria-label="home">
-                    <img src="images/logo-green.png" height="38" width="38" alt="">
-                    <h4 class="lang font-primary-dark" key="TITLE">Jim Royal Trading</h4>
-                  </a>                <ul class = "social-list" role="list" aria-label="Social links">
-                  <!-- social media logo goes here -->
-                   <li><a href="https://www.facebook.com"><img class="social-icon" src="images/socialMedia/icon-facebook.svg" alt="facebook"></a></li>
-                   <li><a href="https://www.instagram.com"><img class= "social-icon" src="images/socialMedia/icon-instagram.svg" alt="instagram"></a></li>
-                   <li><a href="https://www.youtube.com"><img class="social-icon" src="images/socialMedia/icon-youtube.svg" alt="youtube"></a></li>
-                   <li><a href="https://www.twitter.com"><img class="social-icon" src="images/socialMedia/icon-twitter.svg" alt="twitter"></a></li>
+      <div class="top-footer">
+          <div class="primary-footer-wrapper container">
+            <div class="primary-footer-logo-social">
+              <a class="title" href="index.html" aria-label="home">
+                  <img src="images/logo-green.png" height="38" width="38" alt="">
+                  <h4 class="lang font-primary-dark" key="TITLE">Jim Royal Trading</h4>
+                </a>   
+        
+            </div>
+            <div class="primary-footer-nav">
+              <nav class="footer-nav">
+                <ul class="flow">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="brands.html">Brand</a></li>
+                  <li><a href="pharma.html">Product</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="#">News and Event</a></li>
                 </ul>
+              </nav>
+            </div>
+            <div class="primary-footer-info">
+              <div class="contact-wrap">
+                <img src="./images/contactimg/phone.svg" alt="phone">
+                <a href="tel: +886-2-2709-2296"><span>+886 -2- 2709 - 2296</span></a>
               </div>
-              <div class="primary-footer-nav">
-                <nav class="footer-nav">
-                  <ul class="flow">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="brand.html">Brand</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">News and Event</a></li>
-                  </ul>
-                </nav>
+              <div class="contact-wrap">
+                <img src ="./images/contactimg/fax.svg" alt="fax">
+                <a href="tel: +886-2-2325-7047"><span>+886-2-2325-7047</span></a>
+        
               </div>
-              <div class="primary-footer-form">
-                <form action="">
-                  <input type="email">
-                  <button class="button">Go</button>
-                </form>
-                <p>Copyright 2022. All Rights Reserve</p>
+              <div class="contact-wrap">
+                <img src="./images/contactimg/address.svg" alt="address">
+                <p>Address: 6F.-2, No. 341, Sec 4, Sinyi Rd., Dan-an District, Taipei City 106, Taiwan (R.O.C)</p>
               </div>
+              <div class="contact-wrap">
+                <img src="./images/contactimg/email.svg" alt="email">
+                <a href="mailto: nutrition@jimroyal-trade.com">nutrition@jimroyal-trade.com</a>
+              </div>
+              
+             
             </div>
           </div>
-    </footer>
+          <div class="bottom_footer copyright">
+           <p>Copyright © Jim Trading Royal Company 2023</p>
+        </div>
+
+  </footer>
 </body>
 </html>

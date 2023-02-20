@@ -55,7 +55,7 @@
             }
             .alphabets{
                 display: grid;
-                grid-template-columns: repeat(30, 20px);
+                grid-template-columns: repeat(auto-fill, minxmax(20px, 40px));
                 grid-template-rows: 20px;
                 // justify-content: center;
                 .alphabet{
@@ -64,6 +64,7 @@
                     justify-content: center;
                     span{
                         text-align: center;
+                        text-transform: uppercase;
                     }
                     &:is(:hover,:focus){
                         background-color: green;
