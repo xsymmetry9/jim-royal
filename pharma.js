@@ -1,22 +1,22 @@
-// function appendProduct(name, desc){
+function appendProduct(name, desc){
     
-//     const productContainer = document.querySelector('.product-cards');
+    const productContainer = document.querySelector('.product-cards');
 
-//     const container = document.createElement('div');
-//     container.classList.add('card');
+    const container = document.createElement('div');
+    container.classList.add('card');
 
-//     const productName = document.createElement("h3");
-//     productName.textContent = name;
-//     productName.classList.add('product-name');
-//     container.appendChild(productName);
+    const productName = document.createElement("h3");
+    productName.textContent = name;
+    productName.classList.add('product-name');
+    container.appendChild(productName);
 
-//     const p = document.createElement("p");
-//     p.classList.add('content');
-//     p.textContent = desc;
-//     container.appendChild(p);
+    const p = document.createElement("p");
+    p.classList.add('content');
+    p.textContent = desc;
+    container.appendChild(p);
 
-//     productContainer.appendChild(container);
-// }
+    productContainer.appendChild(container);
+}
 
 
 $(document).ready(function(){
