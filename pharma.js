@@ -21,6 +21,13 @@ function appendProduct(name, desc){
 
     productContainer.appendChild(container);
 }
+function noResult(){
+    const container = document.createElement('div');
+    container.classList.add('card');
+    const text = document.createElement('h3');
+    text.textContent = "No result"
+    container.appendChild(text);
+}
 async function getData(){
     const request = new Request('productsdb.json');
 
@@ -53,18 +60,15 @@ function getProduct(){
    
 }
 
-
 const alphabetbtn = document.querySelectorAll('.alphabet');
 alphabetbtn.forEach(button => {
     button.addEventListener("click", function(event)
     {
+        hideAll();
         var key = (button.id);
-
-        console.log(key);
-        getProduct().forEach((item) =>{
+        getProduct().forEach((item, index) =>{
             if(item.product.slice(0,1).toLowerCase() == key){
-                console.log("true");
-                // don't hide it
+                appendProduct(item.product, item.description);
             }
             else{
                 console.log('false');
