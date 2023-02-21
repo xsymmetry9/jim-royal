@@ -41,12 +41,16 @@ function hideAll(){
     })
 }
 function getProduct(){
-    var arrayOfProduct = []
-    const getProduct = document.querySelectorAll(".product-cards .card h3")
-    getProduct.forEach(item =>{
-        arrayOfProduct.push(item.innerHTML);
+    const arrayOfProduct= [];
+    const getProduct = document.querySelectorAll(".product-cards .card")
+    getProduct.forEach((item) =>{
+        let person = {product: item.children[0].innerHTML,
+                    description: item.children[1].innerHTML};
+        //Only save items that begins with 'a'
+        arrayOfProduct.push(person);
     });
-    return arrayOfProduct;
+    return(arrayOfProduct);
+   
 }
 
 
@@ -54,8 +58,20 @@ const alphabetbtn = document.querySelectorAll('.alphabet');
 alphabetbtn.forEach(button => {
     button.addEventListener("click", function(event)
     {
-    console.log(button.id);
-    console.log(getProduct());
+        var key = (button.id);
+
+        console.log(key);
+        getProduct().forEach((item) =>{
+            if(item.product.slice(0,1).toLowerCase() == key){
+                console.log("true");
+                // don't hide it
+            }
+            else{
+                console.log('false');
+                //hide whatever
+            }
+        });
+ 
     });
 });
 
