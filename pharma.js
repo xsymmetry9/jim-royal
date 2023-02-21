@@ -34,17 +34,30 @@ async function getData(){
     });
 }
 getData();
+function hideAll(){
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(item => {
+        item.classList.add('hidden');
+    })
+}
+function getProduct(){
+    var arrayOfProduct = []
+    const getProduct = document.querySelectorAll(".product-cards .card h3")
+    getProduct.forEach(item =>{
+        arrayOfProduct.push(item.innerHTML);
+    });
+    return arrayOfProduct;
+}
 
-// const alphabetbtn = document.querySelectorAll('.alphabet');
-// alphabetbtn.forEach(button => {
-//     button.addEventListener("click", function(event)
-//     {
-//     if (element['product'].slice(0,1) == 'a'){
-//         appendProduct(element['product'], element['description']);            }
-//     else{
-//     console.log("false");
-//     }
-// });
+
+const alphabetbtn = document.querySelectorAll('.alphabet');
+alphabetbtn.forEach(button => {
+    button.addEventListener("click", function(event)
+    {
+    console.log(button.id);
+    console.log(getProduct());
+    });
+});
 
 //-----------------------------JQuery-----------------------------------------------
 // $('.alphabet').click()
