@@ -1654,12 +1654,21 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
 }
 
 .bg-green {
-  background-color: #15803d;
+  background: url(/images/bg-green-leaf.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-pot-tree {
+  background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.9), rgb(250, 250, 250)), url(/images/bg-tree-pot.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #contact h1 {
-  padding-top: 7rem;
-  font-size: 60px;
+  padding: 7rem 0 3rem;
+  font-size: 57px;
 }
 @media (max-width: 55em) {
   #contact h1 {
@@ -1708,6 +1717,7 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  padding-bottom: 7rem;
 }
 #contact .container .left h1, #contact .container .left h3, #contact .container .left p, #contact .container .left span {
   color: #f0fdf4;
@@ -1741,7 +1751,6 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
 #contact .container .left .phone-wrapper {
   position: relative;
   display: inline-block;
-  padding-bottom: 5rem;
 }
 #contact .container .left .phone-wrapper:before {
   content: "";
@@ -1766,7 +1775,7 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   margin-inline: auto;
   background-color: white;
   box-shadow: 0px 0px 5px 2px rgb(161, 161, 161);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 @media (max-width: 55em) {
   #contact .container .right .right-container {
@@ -1774,45 +1783,32 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   }
 }
 #contact .container .right .right-container h2 {
-  font-size: 36px;
+  font-size: 24px;
   text-align: center;
-  padding: 2.5rem;
-}
-@media (max-width: 55em) {
-  #contact .container .right .right-container h2 {
-    font-size: 1.6rem;
-  }
+  padding: 2rem 0 0 1.5rem;
 }
 #contact .container .right form .form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding-bottom: 3rem;
+  padding: 3rem;
+  max-width: 500px;
 }
-#contact .container .right form .form-container .form-control {
-  height: 2.2rem;
-  width: 280px;
+#contact .container .right form .form-container input, #contact .container .right form .form-container textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 1.2rem;
 }
-#contact .container .right form .form-container input[placeholder] {
+#contact .container .right form .form-container input[placeholder], #contact .container .right form .form-container textarea[placeholder] {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   color: #171717;
-  padding-left: 1rem;
-}
-#contact .container .right form .form-container textarea {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  color: #171717;
-  padding-left: 1rem;
-  padding-top: 0.5rem;
 }
 
 .container-bottom {
-  padding-top: 7rem;
+  padding: 7rem 0 5rem 0;
   max-width: 1100px;
   width: 100%;
   margin-inline: auto;
@@ -1838,21 +1834,39 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   margin-inline: auto;
   padding-bottom: 3rem;
 }
-.container-bottom .txt-content p, .container-bottom .txt-content span {
-  margin-left: 4rem;
+.container-bottom .txt-content h1, .container-bottom .txt-content h3, .container-bottom .txt-content p, .container-bottom .txt-content span {
+  color: #171717;
+  padding-left: 4rem;
+}
+.container-bottom .txt-content p {
+  max-width: 300px;
+  width: 100%;
+  line-height: 1.5;
+}
+.container-bottom .txt-content a {
+  text-decoration: none;
+}
+.container-bottom .txt-content span {
   position: relative;
-  display: inline-block;
-  line-height: 1.2;
+}
+.container-bottom .txt-content span:is(:hover, :focus) {
+  color: red;
+}
+.container-bottom .txt-content span:after {
+  font-size: 1.5rem;
+  content: " →";
+  padding-right: 1rem;
+  font-weight: 300;
 }
 .container-bottom .txt-content:before {
   content: "";
   height: 40px;
   width: 40px;
-  background: url(/images/contactimg/phone.svg) no-repeat;
+  background: url(/images/contactimg/address.svg) no-repeat;
   background-position: center;
-  background-color: white;
-  border: green 2px solid;
+  background-color: #f0fdf4;
   border-radius: 50%;
+  border: 1px solid gray;
   position: absolute;
   box-shadow: 0px 0px 5px 2px rgb(161, 161, 161);
 }
