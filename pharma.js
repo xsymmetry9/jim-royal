@@ -23,7 +23,6 @@ function appendProduct(name, desc){
 }
 function noResult(){
     const container = document.createElement('div');
-    container.classList.add('card');
     const text = document.createElement('h3');
     text.textContent = "No result"
     container.appendChild(text);
@@ -59,22 +58,32 @@ function getProduct(){
     return(arrayOfProduct);
    
 }
+const getAll = document.querySelector('.all');
+getAll.addEventListener('click', getData);
 
 const alphabetbtn = document.querySelectorAll('.alphabet');
 alphabetbtn.forEach(button => {
     button.addEventListener("click", function(event)
     {
+        let valid = 0;
+        let invalid = 0;
         hideAll();
         var key = (button.id);
         getProduct().forEach((item, index) =>{
             if(item.product.slice(0,1).toLowerCase() == key){
                 appendProduct(item.product, item.description);
+                valid++;
             }
             else{
-                console.log('false');
-                //hide whatever
+                invalid++;
             }
         });
+        if (valid == 0){
+            console.log("there are 0 valids")
+        }
+        else{
+            console.log(`There are ${invalid} hidden and ${valid} are valid`);
+        }
  
     });
 });

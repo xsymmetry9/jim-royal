@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+<!-- jquery-3 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Jim Royal Trading Company</title>
+</head>
+<body>
+  <header>
+    <div class="primary-header position-absolute">
+        <div class="nav-wrapper container">
+          <a class="title-logo" href="index.html" aria-label="home">
+            <img src="images/logo-green.png" height="38" width="38" alt="">
+            <h4 class="lang | font-primary-dark" key="TITLE">Jim Royal Trading</h4>
+          </a>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="menu" aria-hidden="true">
+            <img class="icon-close" src="images/close.png" alt="close" aria-hidden="false">
+            <span class="visually-hidden">Menu</span>
+          </button>
+
+          <nav class="primary-navigation">
+            <ul aria-label="primary" role="list" class="nav-list">
+              <li><a href="about.html" class="lang text-transform-upper" key="ABOUT">about</a></li>
+              <li><a href="brands.html" class ="text-transform-upper lang" key="">Brands</a></li>
+              <li><a href="pharma.html" class ="text-transform-upper lang" key="products">Products</a></li>
+              <li><a href="contact.html" class ="text-transform-upper lang" key="CONTACT">Contact</a></li>
+              <li><a href="news.html" class ="text-transform-upper lang" key="NEWS">News and Event</a></li>
+            </ul>
+          </nav>
+
+          <div class="mobile-translate-toggle translate-nav-wrap">
+            <a class="translate english-translate active" id ="en-us">EN</a>
+            <a class="translate chinese-translate" id="zh-tw">CH</a>
+          </div>
+        </div>
+
+
+           
+      </div>
+</header>
+    <main>
+      <section class="bg-dark">
+        <div class="container__contact">
+          <div class="pos-relative">
+            <h1>Contact us!</h1>
+            <p>Get in touch with us by completing the below form or call us now</p>
+            <!-- Form starts here -->
+            <form action="/">
+              <div class="row">
+                <div class="col-6">
+                  <input class ="form-control" type="text" placeholder="Your name" required id="name" >
+                </div>
+                <div class="col-6">
+                  <input class= "form-control" type="text" placeholder="Your company name" id="company" >
+                </div>
+                <div class="col-6">
+                  <input class= "form-control" type="email" placeholder="Email address" required id="email" >
+                </div>
+                <div class="col-6">
+                  <input class= "form-control" type="text" placeholder="Subject" id="number" >
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" type="text" placeholder="Message" required id="message" maxlength="200"></textarea>
+                </div>
+                <!-- Submit button -->
+                <div class="col">
+                  <button class= "button-primary-light" type="submit">Send a request</button>
+                </div>
+              </div>
+            </form>
+            <!-- Form END -->
+          </div>
+          <div class="map_wrap">
+            <!-- Google Map -->
+            <iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.4917028011555!2d121.5380377201896!3d25.01738215954843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a989fe322ea9%3A0x21750404ee1d7f66!2sNational%20Taiwan%20University!5e0!3m2!1sen!2stw!4v1673101312457!5m2!1sen!2stw" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          
+        </div>
+      </section>
+     
+      <!-- Contact Info -->
+      <section id="contact__info">
+        <div class="contact_wrapper">
+          <div class="card-body">
+            <h4>Address</h4>
+            <p>6F.-2, No. 341, Sec 4, Sinyi Rd., Dan-an District, Taipei City 106, Taiwan (R.O.C)</p>
+            <a class="btn-outline" href="https://www.google.com/maps" target="_blank">
+              <img 
+              src="./images/placeholder.png"
+              href="https://www.flaticon.com/free-icons/pin"
+              title="pin icons"
+              alt="Pin icons created by Freepik - Flaticon">
+              Get directions</a>
+          </div>
+          <div class="card-body">
+            <h4>Phone</h4>
+            <ul class="flow">
+              <li class="col">
+                <span>Office</span>
+                <a href="tel:+886-2-2709-2296">+886-2-2709-2296</a>
+              </li>
+              <li class="col">
+                <span>Fax</span>
+                <a href="tel:+886-2-2325-7047">+886-2-2325-7047</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h4>Schedule</h4>
+            <ul class="flow">
+              <li>
+                <span>Mon - Fri</span>
+                <div class="d-flex">
+                  <span>09:00</span>
+                  <span class="border-top" style="width:36px; height:1px;"></span>
+                  <span>18:00</span>
+                </div>
+              </li>
+    
+            </ul>
+          </div>
+          <div class="card-body">
+            <h4>Email</h4>
+            <ul class="flow">
+              <li>
+                <span>Email 1</span>
+                <a href="mailto: nutrition@jimroyal-trade.com">nutrition@jimroyal-trade.com</a>
+                <span>Email 2</span>
+                <a href="mailto: nutrition@jimroyal-trade.com">jimroyal@ms27.hinet.net</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+
+    </main>
+    <footer>
+      <div class="top-footer">
+          <div class="primary-footer-wrapper container">
+            <div class="primary-footer-logo-social">
+              <a class="title" href="index.html" aria-label="home">
+                  <img src="images/logo-green.png" height="38" width="38" alt="">
+                  <h4 class="lang font-primary-dark" key="TITLE">Jim Royal Trading</h4>
+                </a>   
+        
+            </div>
+            <div class="primary-footer-nav">
+              <nav class="footer-nav">
+                <ul class="flow">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="brands.html">Brand</a></li>
+                  <li><a href="pharma.html">Product</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="#">News and Event</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="primary-footer-info">
+              <div class="contact-wrap">
+                <img src="./images/contactimg/phone.svg" alt="phone">
+                <a href="tel: +886-2-2709-2296"><span>+886 -2- 2709 - 2296</span></a>
+              </div>
+              <div class="contact-wrap">
+                <img src ="./images/contactimg/fax.svg" alt="fax">
+                <a href="tel: +886-2-2325-7047"><span>+886-2-2325-7047</span></a>
+        
+              </div>
+              <div class="contact-wrap">
+                <img src="./images/contactimg/address.svg" alt="address">
+                <p>Address: 6F.-2, No. 341, Sec 4, Sinyi Rd., Dan-an District, Taipei City 106, Taiwan (R.O.C)</p>
+              </div>
+              <div class="contact-wrap">
+                <img src="./images/contactimg/email.svg" alt="email">
+                <a href="mailto: nutrition@jimroyal-trade.com">nutrition@jimroyal-trade.com</a>
+              </div>
+              
+             
+            </div>
+          </div>
+          <div class="bottom_footer copyright">
+           <p>Copyright © Jim Trading Royal Company 2023</p>
+        </div>
+
+  </footer>
+</body>
+</html>

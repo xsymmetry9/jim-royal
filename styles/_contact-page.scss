@@ -1,5 +1,5 @@
 .bg-dark{
-    background-color: black;
+    background-color: $clr-neutral-900;
 }
 
 .container__contact{
@@ -39,6 +39,7 @@
             }
         }
         p{
+            color: $clr-neutral-50;
             font-weight: $fw-regular;
             font-weight: $fs-400;
         }
@@ -81,7 +82,7 @@
                 background: transparent;
                 border: none;
                 border-bottom: 1px solid rgb(161, 161, 161);
-                color: #fff;
+                color: $clr-neutral-900;
 
                 transition: border-bottom 2s;
                 &:focus,
