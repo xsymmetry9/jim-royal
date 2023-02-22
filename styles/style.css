@@ -1399,9 +1399,22 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
 }
 #pharma-ingredients .nav-container .alpha-nav .alphabets {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 20px);
-  grid-template-rows: 20px;
-  gap: 0.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-template-rows: auto;
+  gap: 0.3rem;
+  position: relative;
+}
+#pharma-ingredients .nav-container .alpha-nav .alphabets #remove {
+  position: absolute;
+  bottom: -30%;
+  right: 4px;
+  width: 100px;
+  color: #fff;
+  background-color: rgb(218, 43, 43);
+  outline: none;
+}
+#pharma-ingredients .nav-container .alpha-nav .alphabets #remove:is(:hover, :focus) {
+  background-color: rgb(215, 108, 108);
 }
 #pharma-ingredients .nav-container .alpha-nav .alphabets button {
   outline: 1px solid black;
@@ -1409,6 +1422,8 @@ header .primary-header .primary-navigation a:is(:hover, :focus) {
   justify-content: center;
   align-items: center;
   border: none;
+  padding: 0.2rem 0;
+  border-radius: 2px;
 }
 #pharma-ingredients .nav-container .alpha-nav .alphabets button span {
   text-align: center;
