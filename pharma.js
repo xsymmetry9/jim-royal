@@ -46,9 +46,10 @@ function removeAll(){
     while(productCard.firstElementChild){
         productCard.firstElementChild.remove();
     }
+}
 remove.addEventListener('click', removeAll);
 
-}
+
 
 // function getProduct(){
 //     const arrayOfProduct= [];
@@ -97,10 +98,11 @@ fetch('productsdb.json')
     .then(data => {
         let key;
         const alphabetbtn = document.querySelectorAll('.alphabet');
-        removeAll();
 
         alphabetbtn.forEach(button =>{
             button.addEventListener('click', (e) =>{
+                removeAll();
+
                 key = button.id;
                 console.log(key);
                 const filtered = data.filter(item => item.product.toLowerCase().startsWith(key));
